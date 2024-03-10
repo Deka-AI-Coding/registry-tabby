@@ -31,3 +31,4 @@ To ensure optimal response quality, and given that latency requirements are not 
 | [TabbyML/DeepseekCoder-1.3B-Instruct](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [TabbyML/DeepseekCoder-6.7B-Instruct](https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [TabbyML/Gemma-7B-it](https://huggingface.co/google/gemma-7b-it) | [Gemma Terms of Use](https://ai.google.dev/gemma/terms) |
+| [TabbyML/Gemma-7B](https://huggingface.co/google/gemma-7b) | [Gemma Terms of Use](https://ai.google.dev/gemma/terms) |
