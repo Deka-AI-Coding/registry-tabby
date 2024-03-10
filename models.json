@@ -123,5 +123,16 @@
       "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q8_0.gguf"
     ],
     "sha256": "02cd6ce7ccec670cf6d3dd147932f13e584f9e964d5a3297a74b401b658471ae"
+  },
+  {
+    "license_name": "Gemma Terms of Use",
+    "license_url": "https://ai.google.dev/gemma/terms",
+    "chat_template": "You are an AI programming assistant.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "name": "Gemma-7B-it",
+    "provider_url": "https://huggingface.co/google/gemma-7b-it",
+    "urls": [
+      "https://huggingface.co/sayhan/gemma-7b-it-GGUF-quantized/resolve/main/gemma-7b-it.Q5_K_M-v2.gguf"
+    ],
+    "sha256": "528611c83f8a40c3009863ae787c2e21d7db9320c96b708702166280730ce971"
   }
 ]
