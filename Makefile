@@ -1,10 +1,7 @@
-all: README.md models.json
-
-README.md: clean models.json
-	./scripts/generate_readme.py
+all: models.json
 
 models.json: clean
 	cat meta/models.yaml | yq > models.json
 
 clean:
-	rm README.md models.json &> /dev/null || true
+	rm models.json &> /dev/null || true
