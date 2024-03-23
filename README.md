@@ -32,3 +32,4 @@ To ensure optimal response quality, and given that latency requirements are not 
 | [Deka-AI-Coding/DeepseekCoder-6.7B-Instruct](https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct) | [Deepseek License](https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL) |
 | [Deka-AI-Coding/Gemma-7B-it](https://huggingface.co/google/gemma-7b-it) | [Gemma Terms of Use](https://ai.google.dev/gemma/terms) |
 | [Deka-AI-Coding/Gemma-7B](https://huggingface.co/google/gemma-7b) | [Gemma Terms of Use](https://ai.google.dev/gemma/terms) |
+| [Deka-AI-Coding/Test-Ollama-Gemma-7B](https://huggingface.co/google/gemma-7b) | [Gemma Terms of Use](https://ai.google.dev/gemma/terms) |
