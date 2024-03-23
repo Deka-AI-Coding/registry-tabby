@@ -1,4 +1,4 @@
 [workspace]
-members = [
-    "generator"
-]
+resolver = "2"
+
+members = ["generator"]

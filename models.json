@@ -1,149 +1,38 @@
 [
   {
-    "license_name": "BigCode-OpenRAIL-M",
-    "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
-    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
-    "name": "StarCoder-1B",
-    "provider_url": "https://huggingface.co/bigcode/starcoderbase-1b",
+    "name": "starcoder_1b",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
     "urls": [
-      "https://huggingface.co/TabbyML/models/resolve/main/starcoderbase-1B.Q8_0.gguf",
-      "https://modelscope.cn/api/v1/models/TabbyML/StarCoder-1B/repo?FilePath=ggml/q8_0.v2.gguf"
+      "https://registry.ollama.ai/v2/library/starcoder/blobs/sha256:397f02a8d32c293bcb63e2578a03a3d8430d8ec744f5b3180cc677e702fcd2cf"
     ],
-    "sha256": "1bb6441486d102db03dac30c82d6b1029ee4f9f5d73f27444fa58cbfcd7cfa0f"
+    "sha256": "397f02a8d32c293bcb63e2578a03a3d8430d8ec744f5b3180cc677e702fcd2cf"
   },
   {
-    "license_name": "BigCode-OpenRAIL-M",
-    "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
-    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
-    "name": "StarCoder-3B",
-    "provider_url": "https://huggingface.co/bigcode/starcoderbase-3b",
+    "name": "starcoder_3b",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
     "urls": [
-      "https://huggingface.co/TabbyML/models/resolve/main/starcoderbase-3B.Q8_0.gguf",
-      "https://modelscope.cn/api/v1/models/TabbyML/StarCoder-3B/repo?FilePath=ggml/q8_0.v2.gguf"
+      "https://registry.ollama.ai/v2/library/starcoder/blobs/sha256:b4a4eea1f5d801ddec62c03266ef18be14fca16332cf82ff332782d4f14dc21f"
     ],
-    "sha256": "9798b7cba84ade7c69ff9f033d60c954e16b18f4d01829993b5fe7e33a49ba81"
+    "sha256": "b4a4eea1f5d801ddec62c03266ef18be14fca16332cf82ff332782d4f14dc21f"
   },
   {
-    "license_name": "BigCode-OpenRAIL-M",
-    "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
-    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
-    "name": "StarCoder-7B",
-    "provider_url": "https://huggingface.co/bigcode/starcoderbase-7b",
+    "name": "starcoder_7b",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
     "urls": [
-      "https://huggingface.co/TabbyML/models/resolve/main/starcoderbase-7B.Q8_0.gguf",
-      "https://modelscope.cn/api/v1/models/TabbyML/StarCoder-7B/repo?FilePath=ggml/q8_0.v2.gguf"
+      "https://registry.ollama.ai/v2/library/starcoder/blobs/sha256:1f8634674678569060a61caa4ed6f967bbe3ffbdbde2d3edd0055ff160d1fdd9"
     ],
-    "sha256": "33dfcc7e216f1a072b4e16cd3bb19a0e55f5874ed319416435c8fc99216b8bfa"
+    "sha256": "1f8634674678569060a61caa4ed6f967bbe3ffbdbde2d3edd0055ff160d1fdd9"
   },
   {
-    "license_name": "Llama 2",
-    "license_url": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
-    "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "name": "CodeLlama-7B",
-    "provider_url": "https://huggingface.co/codellama/CodeLlama-7b-hf",
+    "name": "starcoder_15b",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
     "urls": [
-      "https://huggingface.co/TheBloke/CodeLlama-7B-GGUF/resolve/main/codellama-7b.Q8_0.gguf"
+      "https://registry.ollama.ai/v2/library/starcoder/blobs/sha256:5f0c96a0687463495a4d0815300ec6fffd5f0b7fb49db3c2fad4d8cff85960e2"
     ],
-    "sha256": "a4eaffa534306e0fc6be5a14cb7db02010546e21fefc32794f000c9b26822db3"
-  },
-  {
-    "license_name": "Llama 2",
-    "license_url": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
-    "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "name": "CodeLlama-13B",
-    "provider_url": "https://huggingface.co/codellama/CodeLlama-13b-hf",
-    "urls": [
-      "https://huggingface.co/TheBloke/CodeLlama-13B-GGUF/resolve/main/codellama-13b.Q8_0.gguf"
-    ],
-    "sha256": "85763827a80d9067acdc1cb8ceafd2cd0a2644a87d0cf1cd4b75e8d7b8a2777d"
-  },
-  {
-    "name": "WizardCoder-3B",
-    "provider_url": "https://huggingface.co/WizardLM/WizardCoder-3B-V1.0",
-    "license_name": "BigCode-OpenRAIL-M",
-    "license_url": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
-    "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "urls": [
-      "https://huggingface.co/TabbyML/models/resolve/main/wizardcoder-3B.Q8_0.gguf",
-      "https://modelscope.cn/api/v1/models/TabbyML/WizardCoder-3B/repo?FilePath=ggml/q8_0.v2.gguf"
-    ],
-    "sha256": "9397dda06b86612682ec019b347d78eb4ad9ce8efeefe1366ff5483359ed8c07"
-  },
-  {
-    "license_name": "Apache 2.0",
-    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
-    "name": "Mistral-7B",
-    "provider_url": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
-    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "urls": [
-      "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistral-7b-instruct-v0.1.Q8_0.gguf"
-    ],
-    "sha256": "ab634d1d552dc60533e486cbcc73ad9b01358994dabf2453230e7fcd77308dc8"
-  },
-  {
-    "license_name": "Deepseek License",
-    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
-    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "name": "DeepseekCoder-1.3B",
-    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base",
-    "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-1.3b-base-GGUF/resolve/main/deepseek-coder-1.3b-base.Q8_0.gguf"
-    ],
-    "sha256": "9fcdcb283ef5b1d80ec7365b307c1ceab0c0f8ea079b49969f7febc06a11bccd"
-  },
-  {
-    "license_name": "Deepseek License",
-    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
-    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "name": "DeepseekCoder-6.7B",
-    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base",
-    "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-base-GGUF/resolve/main/deepseek-coder-6.7b-base.Q8_0.gguf"
-    ],
-    "sha256": "a2f82242ac5e465037cbf1ed754f04f0be044ee196e1589905f9e4dcd0e6559d"
-  },
-  {
-    "license_name": "Deepseek License",
-    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
-    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "name": "DeepseekCoder-1.3B-Instruct",
-    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct",
-    "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-1.3B-instruct-GGUF/resolve/main/deepseek-coder-1.3b-instruct.Q8_0.gguf"
-    ],
-    "sha256": "36eb025121a50ee6d37fe900659393ff8fb5ea34adc0e3c11fc635e07624dcdb"
-  },
-  {
-    "license_name": "Deepseek License",
-    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
-    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "name": "DeepseekCoder-6.7B-Instruct",
-    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct",
-    "urls": [
-      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q8_0.gguf"
-    ],
-    "sha256": "02cd6ce7ccec670cf6d3dd147932f13e584f9e964d5a3297a74b401b658471ae"
-  },
-  {
-    "license_name": "Gemma Terms of Use",
-    "license_url": "https://ai.google.dev/gemma/terms",
-    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "name": "Gemma-7B-it",
-    "provider_url": "https://huggingface.co/google/gemma-7b-it",
-    "urls": [
-      "https://huggingface.co/sayhan/gemma-7b-it-GGUF-quantized/resolve/main/gemma-7b-it.Q5_K_M-v2.gguf"
-    ],
-    "sha256": "528611c83f8a40c3009863ae787c2e21d7db9320c96b708702166280730ce971"
-  },
-  {
-    "license_name": "Gemma Terms of Use",
-    "license_url": "https://ai.google.dev/gemma/terms",
-    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "name": "Gemma-7B",
-    "provider_url": "https://huggingface.co/google/gemma-7b",
-    "urls": [
-      "https://huggingface.co/sayhan/gemma-7b-GGUF-quantized/resolve/main/gemma-7b.Q8_0-v2.gguf"
-    ],
-    "sha256": "6a945698cac9f296a9d638ecbd0935387477fd0ad682b4be19e372036ea6e8c7"
+    "sha256": "5f0c96a0687463495a4d0815300ec6fffd5f0b7fb49db3c2fad4d8cff85960e2"
   }
 ]

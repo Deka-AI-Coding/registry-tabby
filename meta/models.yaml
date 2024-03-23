@@ -1,0 +1,7 @@
+- name: starcoder
+  prompt_template: <fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>
+  tags: 
+    - 1b
+    - 3b
+    - 7b 
+    - 15b
