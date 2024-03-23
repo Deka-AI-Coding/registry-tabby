@@ -40,6 +40,17 @@
     "sha256": "5f0c96a0687463495a4d0815300ec6fffd5f0b7fb49db3c2fad4d8cff85960e2"
   },
   {
+    "name": "deepseek-coder_latest",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
+    ],
+    "sha256": "d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
+  },
+  {
     "name": "deepseek-coder_1.3b",
     "provider_url": "https://ollama.com/library/deepseek-coder",
     "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
@@ -51,37 +62,15 @@
     "sha256": "d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
   },
   {
-    "name": "deepseek-coder_6.7b",
+    "name": "deepseek-coder_base",
     "provider_url": "https://ollama.com/library/deepseek-coder",
-    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
     "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
     "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:3bae45e624a38d64468933accc44ab01a94dd7cdd08c502a66231fc94708f0d7"
     ],
-    "sha256": "59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
-  },
-  {
-    "name": "deepseek-coder_1.3b-instruct",
-    "provider_url": "https://ollama.com/library/deepseek-coder",
-    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
-    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "urls": [
-      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
-    ],
-    "sha256": "d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
-  },
-  {
-    "name": "deepseek-coder_6.7b-instruct",
-    "provider_url": "https://ollama.com/library/deepseek-coder",
-    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
-    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
-    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "urls": [
-      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
-    ],
-    "sha256": "59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
+    "sha256": "3bae45e624a38d64468933accc44ab01a94dd7cdd08c502a66231fc94708f0d7"
   },
   {
     "name": "deepseek-coder_33b",
@@ -95,6 +84,72 @@
     "sha256": "065b9a7416ba28634cd4efc2cd3024d4755731c1275dc0286b81b01793185fbb"
   },
   {
+    "name": "deepseek-coder_6.7b",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
+    ],
+    "sha256": "59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
+  },
+  {
+    "name": "deepseek-coder_instruct",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
+    ],
+    "sha256": "d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:3bae45e624a38d64468933accc44ab01a94dd7cdd08c502a66231fc94708f0d7"
+    ],
+    "sha256": "3bae45e624a38d64468933accc44ab01a94dd7cdd08c502a66231fc94708f0d7"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
+    ],
+    "sha256": "d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:03eebe54e21381ce8cca2a9dd9498d3a538ee3f2160d3db432466bd0433a6911"
+    ],
+    "sha256": "03eebe54e21381ce8cca2a9dd9498d3a538ee3f2160d3db432466bd0433a6911"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
+    ],
+    "sha256": "59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
+  },
+  {
     "name": "deepseek-coder_33b-instruct",
     "provider_url": "https://ollama.com/library/deepseek-coder",
     "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
@@ -104,6 +159,1007 @@
       "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:065b9a7416ba28634cd4efc2cd3024d4755731c1275dc0286b81b01793185fbb"
     ],
     "sha256": "065b9a7416ba28634cd4efc2cd3024d4755731c1275dc0286b81b01793185fbb"
+  },
+  {
+    "name": "deepseek-coder_33b-base",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:2791ffcdad62dde202d01413e8c1126eb951c1a3e6c06d941a76e4bbd834bc62"
+    ],
+    "sha256": "2791ffcdad62dde202d01413e8c1126eb951c1a3e6c06d941a76e4bbd834bc62"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q4_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:3bae45e624a38d64468933accc44ab01a94dd7cdd08c502a66231fc94708f0d7"
+    ],
+    "sha256": "3bae45e624a38d64468933accc44ab01a94dd7cdd08c502a66231fc94708f0d7"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q4_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a9fd95f148ed5f9787d195bf8d2bbfe4039d8ad4286eeb142ed3eff916d1c5cc"
+    ],
+    "sha256": "a9fd95f148ed5f9787d195bf8d2bbfe4039d8ad4286eeb142ed3eff916d1c5cc"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q5_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:2260966ca7a2dea8bb47cd45b7b2260fa88e8e68b17bc87a27c95f335fd4af3e"
+    ],
+    "sha256": "2260966ca7a2dea8bb47cd45b7b2260fa88e8e68b17bc87a27c95f335fd4af3e"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q5_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:80d92b14b3fec7fbf467534178bdd12798f36ab028779ba568b25c8227fa943d"
+    ],
+    "sha256": "80d92b14b3fec7fbf467534178bdd12798f36ab028779ba568b25c8227fa943d"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q8_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:1cd4191b387511e728a18c44f1449fc2e700c35b5d5244557b3d7f6192508b61"
+    ],
+    "sha256": "1cd4191b387511e728a18c44f1449fc2e700c35b5d5244557b3d7f6192508b61"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q2_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:2738553a4cd33591513a6a151c60200139da76dc144b24082a26f34bbe109e25"
+    ],
+    "sha256": "2738553a4cd33591513a6a151c60200139da76dc144b24082a26f34bbe109e25"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q3_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:38c5c3e9843da58d3e55bd95d7ba5dc479ed271d11976a84c9b67b5a7647cfb4"
+    ],
+    "sha256": "38c5c3e9843da58d3e55bd95d7ba5dc479ed271d11976a84c9b67b5a7647cfb4"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q3_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d4d692f003034a08f677956e27b71dfb07597f0f692fdd36db95316332419cda"
+    ],
+    "sha256": "d4d692f003034a08f677956e27b71dfb07597f0f692fdd36db95316332419cda"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q3_K_L",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:e6f7620fb5bd0bde77a85bf8242cfe62448ef9637a219e24ed6fd2465a6ba90b"
+    ],
+    "sha256": "e6f7620fb5bd0bde77a85bf8242cfe62448ef9637a219e24ed6fd2465a6ba90b"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q4_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:be97d8974f2db640cf7f220b9dd0d06a4c721039e1240e2f8638a549ad45d833"
+    ],
+    "sha256": "be97d8974f2db640cf7f220b9dd0d06a4c721039e1240e2f8638a549ad45d833"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q4_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:0466ff52760d1106120bdd4993590b0508e7d132f50716127e553b5b98fad40c"
+    ],
+    "sha256": "0466ff52760d1106120bdd4993590b0508e7d132f50716127e553b5b98fad40c"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q5_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:59ecbef75408f536172638ef5f1992763db0492d1973784e4254ef59ec38749a"
+    ],
+    "sha256": "59ecbef75408f536172638ef5f1992763db0492d1973784e4254ef59ec38749a"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q5_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:e5af4163fe5b4f281fa2f3382d0def6e97e12eeb7a17abc016019898e2ddcbca"
+    ],
+    "sha256": "e5af4163fe5b4f281fa2f3382d0def6e97e12eeb7a17abc016019898e2ddcbca"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-q6_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:5090971db913a50a4c196b1d62bcab7081547f959fc4811d01b4101bcfb4d6e9"
+    ],
+    "sha256": "5090971db913a50a4c196b1d62bcab7081547f959fc4811d01b4101bcfb4d6e9"
+  },
+  {
+    "name": "deepseek-coder_1.3b-base-fp16",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d7281097e689776034792bf1c31d00e70dbcade5c02c90db1064cc2d606cd4e5"
+    ],
+    "sha256": "d7281097e689776034792bf1c31d00e70dbcade5c02c90db1064cc2d606cd4e5"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q4_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
+    ],
+    "sha256": "d040cc18521592f70c199396aeaa44cdc40224079156dc09d4283d745d9dc5fd"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q4_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:43342e2cb6bab8e8507717c7a723314e9e92aec61819002efe33eedba5c3001f"
+    ],
+    "sha256": "43342e2cb6bab8e8507717c7a723314e9e92aec61819002efe33eedba5c3001f"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q5_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:16edf7e0c00cbaa06b70535fbc02510de82cb34fe399a88df9e9aa5b1c760136"
+    ],
+    "sha256": "16edf7e0c00cbaa06b70535fbc02510de82cb34fe399a88df9e9aa5b1c760136"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q5_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:fdaa10dcbd6c04a57728a205f1b0597b1994ac4c6a821e7088e2c78122f869a1"
+    ],
+    "sha256": "fdaa10dcbd6c04a57728a205f1b0597b1994ac4c6a821e7088e2c78122f869a1"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q8_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:f73bbadf4596338f2a856d4ba76e8cee4de882386d299a6e0be437f6bf6faf6c"
+    ],
+    "sha256": "f73bbadf4596338f2a856d4ba76e8cee4de882386d299a6e0be437f6bf6faf6c"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q2_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:0baec13e604a747485b59fc2ed855a44f7683176be8170ae0e6bd8918bb0ce60"
+    ],
+    "sha256": "0baec13e604a747485b59fc2ed855a44f7683176be8170ae0e6bd8918bb0ce60"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q3_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:fe5a110d0a64ce73713a9b0a0d757c11f579bc5c2e14683da293128f3161c225"
+    ],
+    "sha256": "fe5a110d0a64ce73713a9b0a0d757c11f579bc5c2e14683da293128f3161c225"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q3_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:8695ca2daa97efc42ba64cfe847f6a216d89410fd8384576bc186da9a77bdadc"
+    ],
+    "sha256": "8695ca2daa97efc42ba64cfe847f6a216d89410fd8384576bc186da9a77bdadc"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q3_K_L",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:9d8833106bb7e48ee967e1d3d5910c21a91fcd2834c1196bf10063db436035a7"
+    ],
+    "sha256": "9d8833106bb7e48ee967e1d3d5910c21a91fcd2834c1196bf10063db436035a7"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q4_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:5b448d0aaef917a82ce71c1f8c82dcfc3ec77d360a728ba043a79223c6714f79"
+    ],
+    "sha256": "5b448d0aaef917a82ce71c1f8c82dcfc3ec77d360a728ba043a79223c6714f79"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q4_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:aa970367df1070b793ca8f7a63129407db5fe867cd80068c7725bc062019ef10"
+    ],
+    "sha256": "aa970367df1070b793ca8f7a63129407db5fe867cd80068c7725bc062019ef10"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q5_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:433f894b681fab4697218a9ab18897b91a7e7b31443f766913728e8c0b665f03"
+    ],
+    "sha256": "433f894b681fab4697218a9ab18897b91a7e7b31443f766913728e8c0b665f03"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q5_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:2c33114a5e4941b2cac2627de041e3d3bc84df5b55786ed03063260715807e0d"
+    ],
+    "sha256": "2c33114a5e4941b2cac2627de041e3d3bc84df5b55786ed03063260715807e0d"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-q6_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:c5f514eee92b899fc0d9e549eb0e80c83edad917fd5bbd53cb5c159823bf8881"
+    ],
+    "sha256": "c5f514eee92b899fc0d9e549eb0e80c83edad917fd5bbd53cb5c159823bf8881"
+  },
+  {
+    "name": "deepseek-coder_1.3b-instruct-fp16",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ee7d8f0e5808c78d24e7f23bec6a4f43b6135c7a15cf6e8dbe42e1632194902d"
+    ],
+    "sha256": "ee7d8f0e5808c78d24e7f23bec6a4f43b6135c7a15cf6e8dbe42e1632194902d"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q4_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:03eebe54e21381ce8cca2a9dd9498d3a538ee3f2160d3db432466bd0433a6911"
+    ],
+    "sha256": "03eebe54e21381ce8cca2a9dd9498d3a538ee3f2160d3db432466bd0433a6911"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q4_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:e04bbddd58d9290a89af21ef484ce1113ff34ef35e822e95e52ff1045bac17f5"
+    ],
+    "sha256": "e04bbddd58d9290a89af21ef484ce1113ff34ef35e822e95e52ff1045bac17f5"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q5_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:63cda02f989bf873d19e79ae81756fbc1a3046ecdd70fe9c87aac9e2adfc5109"
+    ],
+    "sha256": "63cda02f989bf873d19e79ae81756fbc1a3046ecdd70fe9c87aac9e2adfc5109"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q5_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:84f5cd56b917c037d55da37f4c049ad48562e78ec6639da6615d915246d5bf90"
+    ],
+    "sha256": "84f5cd56b917c037d55da37f4c049ad48562e78ec6639da6615d915246d5bf90"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q8_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:7bff935013c377ad681d4a0bd8cff4ceb1631454493ef0c1082874f2c21ac5ef"
+    ],
+    "sha256": "7bff935013c377ad681d4a0bd8cff4ceb1631454493ef0c1082874f2c21ac5ef"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q2_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:93064e57f1de7e9418ea7f00a87dfc0f500fc4d26efbea8537e77378264c311c"
+    ],
+    "sha256": "93064e57f1de7e9418ea7f00a87dfc0f500fc4d26efbea8537e77378264c311c"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q3_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:6cc7b517fbeafce7db1d5fa5b2efaab4fdd43de8c2de2a9a5e942a8df6b956ba"
+    ],
+    "sha256": "6cc7b517fbeafce7db1d5fa5b2efaab4fdd43de8c2de2a9a5e942a8df6b956ba"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q3_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:db6489c01e5d81338f2c37a28e58c1f618afb0287b377fbfc1a7c626a19c27d1"
+    ],
+    "sha256": "db6489c01e5d81338f2c37a28e58c1f618afb0287b377fbfc1a7c626a19c27d1"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q3_K_L",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d0b0a21a4f0f9f4b15ee6edd94ed743d6a254b8ad1e5a4a451e0e45e48146489"
+    ],
+    "sha256": "d0b0a21a4f0f9f4b15ee6edd94ed743d6a254b8ad1e5a4a451e0e45e48146489"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q4_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:7afb8adcc26587abb5ad1e895dbd1b5a7c82f9cef29dbd36d016403658aa9f1b"
+    ],
+    "sha256": "7afb8adcc26587abb5ad1e895dbd1b5a7c82f9cef29dbd36d016403658aa9f1b"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q4_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:7abb98bdf151c1ac3923e6cdd5e23a14b26dca6f4578dce53164f1c1e3757592"
+    ],
+    "sha256": "7abb98bdf151c1ac3923e6cdd5e23a14b26dca6f4578dce53164f1c1e3757592"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q5_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d131fbb368101732e8c62e613e04b4c2c59451783ef2d8cf6a0ea1fcbbb7ed48"
+    ],
+    "sha256": "d131fbb368101732e8c62e613e04b4c2c59451783ef2d8cf6a0ea1fcbbb7ed48"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q5_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:885a1c2ce2ea5e159889e78e967263caeb918cc3f5431c399f42de717504193a"
+    ],
+    "sha256": "885a1c2ce2ea5e159889e78e967263caeb918cc3f5431c399f42de717504193a"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-q6_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:5ef15ed56c4ddc0b5654d04cbcf977f552a6b6a1d242568d3a4c2521c65bc2f6"
+    ],
+    "sha256": "5ef15ed56c4ddc0b5654d04cbcf977f552a6b6a1d242568d3a4c2521c65bc2f6"
+  },
+  {
+    "name": "deepseek-coder_6.7b-base-fp16",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:568b421430792b5ad748babba25bad66ee098246b19cbd4db20f4865eca3f5b3"
+    ],
+    "sha256": "568b421430792b5ad748babba25bad66ee098246b19cbd4db20f4865eca3f5b3"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q4_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
+    ],
+    "sha256": "59bb50d8116b6a1f9bfbb940d6bb946a05554e591e30c8c2429ed6c854867ecb"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q4_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:aba260456ab5c99e78b1161f0080b3876327afb6cfb23328db355c2cddb4f01c"
+    ],
+    "sha256": "aba260456ab5c99e78b1161f0080b3876327afb6cfb23328db355c2cddb4f01c"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q5_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:952a67a4f29b7c6cf00ede5b2e1f5587ff9a3001b10c440e8dad79e56cd12451"
+    ],
+    "sha256": "952a67a4f29b7c6cf00ede5b2e1f5587ff9a3001b10c440e8dad79e56cd12451"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q5_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:94b697c99a08fefa45f8b0e47602e9e85301f0fb5fc85da5c2923208f43d8622"
+    ],
+    "sha256": "94b697c99a08fefa45f8b0e47602e9e85301f0fb5fc85da5c2923208f43d8622"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q8_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:b6dfda3810bc128d1853df0d627af48c02ca9bbc28376c3f3484ea881208c9b2"
+    ],
+    "sha256": "b6dfda3810bc128d1853df0d627af48c02ca9bbc28376c3f3484ea881208c9b2"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q2_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:f30988691a6d3c64f7152aa9f866c7cb547c68fc7945182e1304880d0fd07683"
+    ],
+    "sha256": "f30988691a6d3c64f7152aa9f866c7cb547c68fc7945182e1304880d0fd07683"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q3_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:4067f035300d55d5e95fe59b75b7212729b2e924113e93277d3445b0bf93c027"
+    ],
+    "sha256": "4067f035300d55d5e95fe59b75b7212729b2e924113e93277d3445b0bf93c027"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q3_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:16eec58f210578937c24792fceb3ec5b6f745aedd2b63efe8bb49e805e77275d"
+    ],
+    "sha256": "16eec58f210578937c24792fceb3ec5b6f745aedd2b63efe8bb49e805e77275d"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q3_K_L",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:0007cc9e14ff63b746ffa9766192313bba71182eba370543fc21bdc64acbda8b"
+    ],
+    "sha256": "0007cc9e14ff63b746ffa9766192313bba71182eba370543fc21bdc64acbda8b"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q4_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:1ca7dc91aff7182e0485aa3fb6ce2026a8efc59beb30bbc12e4df474529cf4f9"
+    ],
+    "sha256": "1ca7dc91aff7182e0485aa3fb6ce2026a8efc59beb30bbc12e4df474529cf4f9"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q4_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:8de39949f334605a7b8d7167723c9ccc926e506f38405f6d00bdf3df12e8dcf9"
+    ],
+    "sha256": "8de39949f334605a7b8d7167723c9ccc926e506f38405f6d00bdf3df12e8dcf9"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q5_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:2cea35d0d8a8e3b510b75d8c5e095e1b9acfc36026f37837426092cbe5645c4f"
+    ],
+    "sha256": "2cea35d0d8a8e3b510b75d8c5e095e1b9acfc36026f37837426092cbe5645c4f"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q5_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:33d99dbfe4003df0a770d9ceefb633866832b097b27fb09b284fa78f3386b4e6"
+    ],
+    "sha256": "33d99dbfe4003df0a770d9ceefb633866832b097b27fb09b284fa78f3386b4e6"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-q6_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:374bdd4ee9532fb69f241e0493d3cd337a74832d71ea67d6648f684ebec8461d"
+    ],
+    "sha256": "374bdd4ee9532fb69f241e0493d3cd337a74832d71ea67d6648f684ebec8461d"
+  },
+  {
+    "name": "deepseek-coder_6.7b-instruct-fp16",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:fc73f7cfca3f66f7500d6d10391dcb9c54fc9ba608423c935b42eb2cec89d690"
+    ],
+    "sha256": "fc73f7cfca3f66f7500d6d10391dcb9c54fc9ba608423c935b42eb2cec89d690"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q4_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:2791ffcdad62dde202d01413e8c1126eb951c1a3e6c06d941a76e4bbd834bc62"
+    ],
+    "sha256": "2791ffcdad62dde202d01413e8c1126eb951c1a3e6c06d941a76e4bbd834bc62"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q4_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:418a5c40d772b87527f9c83ade4b73f5223cefb1538e1530f644655c2d487842"
+    ],
+    "sha256": "418a5c40d772b87527f9c83ade4b73f5223cefb1538e1530f644655c2d487842"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q5_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:00ad6573a6093cb8105cf8d443227db491a89e3adbb956480929bf9d8628de9a"
+    ],
+    "sha256": "00ad6573a6093cb8105cf8d443227db491a89e3adbb956480929bf9d8628de9a"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q5_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a5d4119bdf5bd09bcec0446fd5f491cb3d3249172d1fda5a91709acdd1621aed"
+    ],
+    "sha256": "a5d4119bdf5bd09bcec0446fd5f491cb3d3249172d1fda5a91709acdd1621aed"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q8_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:797234c6b6a0fc89c48edbcc5cbbf9d486a301146e3718d548adca75e4d178d1"
+    ],
+    "sha256": "797234c6b6a0fc89c48edbcc5cbbf9d486a301146e3718d548adca75e4d178d1"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q2_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:fff8144c088d4ee6840aa16d95ff79aa41dda65c2313f9c66c3c6f43339245e5"
+    ],
+    "sha256": "fff8144c088d4ee6840aa16d95ff79aa41dda65c2313f9c66c3c6f43339245e5"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q3_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:6a76b2196337cf20072a4f934c2859428b946a3fdc2190bf2dff8cae31175877"
+    ],
+    "sha256": "6a76b2196337cf20072a4f934c2859428b946a3fdc2190bf2dff8cae31175877"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q3_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:b71e4a88e443659e48966b833bbca249f3b3b1de974c2cb59bf8966e9a531e4f"
+    ],
+    "sha256": "b71e4a88e443659e48966b833bbca249f3b3b1de974c2cb59bf8966e9a531e4f"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q3_K_L",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ce96cff73d20f7c4c69ae2cb15b709c51888d8736894a19430300f6881a59695"
+    ],
+    "sha256": "ce96cff73d20f7c4c69ae2cb15b709c51888d8736894a19430300f6881a59695"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q4_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:5f6e6bc07ce3214294f057d5362dba19069dc7279c01a0df7f6fc5d6744c3b3b"
+    ],
+    "sha256": "5f6e6bc07ce3214294f057d5362dba19069dc7279c01a0df7f6fc5d6744c3b3b"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q4_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:da76f4a526ea2cda5fce6d9c1b92c968eafae607ed0690603e3d0362d6680bd9"
+    ],
+    "sha256": "da76f4a526ea2cda5fce6d9c1b92c968eafae607ed0690603e3d0362d6680bd9"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q5_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ddca8bdc380ea696d086ee15ef8f73dfb9aab91bf2760245cccd66cda13136dc"
+    ],
+    "sha256": "ddca8bdc380ea696d086ee15ef8f73dfb9aab91bf2760245cccd66cda13136dc"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q5_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:750f51eeb694400ffbb889cb330b551880387e8f09f177ccd4263a39013bf660"
+    ],
+    "sha256": "750f51eeb694400ffbb889cb330b551880387e8f09f177ccd4263a39013bf660"
+  },
+  {
+    "name": "deepseek-coder_33b-base-q6_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:2d7d9427a8a0c9e33bc7942e6526919f32c6864601a6c4a5c4788d11d34a15f9"
+    ],
+    "sha256": "2d7d9427a8a0c9e33bc7942e6526919f32c6864601a6c4a5c4788d11d34a15f9"
+  },
+  {
+    "name": "deepseek-coder_33b-base-fp16",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:38ec4a478491f927120b691cad54a7b5938a1abb616f59f6c00dba324cdf56b5"
+    ],
+    "sha256": "38ec4a478491f927120b691cad54a7b5938a1abb616f59f6c00dba324cdf56b5"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q4_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:065b9a7416ba28634cd4efc2cd3024d4755731c1275dc0286b81b01793185fbb"
+    ],
+    "sha256": "065b9a7416ba28634cd4efc2cd3024d4755731c1275dc0286b81b01793185fbb"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q4_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:7c52ae561d1d473cfec2796df59ac65045ecdcc0edb84a845d6db32b41caa82e"
+    ],
+    "sha256": "7c52ae561d1d473cfec2796df59ac65045ecdcc0edb84a845d6db32b41caa82e"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q5_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:3988ddd34340cbae2e66c1049469bf76637543ad588361be2d0609163cb7970d"
+    ],
+    "sha256": "3988ddd34340cbae2e66c1049469bf76637543ad588361be2d0609163cb7970d"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q5_1",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:60899db4816fa25f131b56543f41e0d294fa5fc615961b9c04723ec107ff3c39"
+    ],
+    "sha256": "60899db4816fa25f131b56543f41e0d294fa5fc615961b9c04723ec107ff3c39"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q8_0",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:d9726a3c89a468dc8d220af61bb838789e0720f8f8126921ddda2972197b037c"
+    ],
+    "sha256": "d9726a3c89a468dc8d220af61bb838789e0720f8f8126921ddda2972197b037c"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q2_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:6af493031cd047c6ec7293665367696c2082c09213c62424ef5827304b9082af"
+    ],
+    "sha256": "6af493031cd047c6ec7293665367696c2082c09213c62424ef5827304b9082af"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q3_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:3b9a21f5f61711fd9effa689aac94ae2576fc372ef7296e3292cc77aa9a7d49c"
+    ],
+    "sha256": "3b9a21f5f61711fd9effa689aac94ae2576fc372ef7296e3292cc77aa9a7d49c"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q3_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:856045eb378061efabeff60c9c68812627df93e71636a0af609427dec2003ad1"
+    ],
+    "sha256": "856045eb378061efabeff60c9c68812627df93e71636a0af609427dec2003ad1"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q3_K_L",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ce5aa2571dc2991626159d6ef6bfd11cd76da898a4e10a2a8839181eb4de77b8"
+    ],
+    "sha256": "ce5aa2571dc2991626159d6ef6bfd11cd76da898a4e10a2a8839181eb4de77b8"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q4_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:12e53d3c23af61c5a57e9c3bc11680a042ccd674537ccb059fcc11a7a54d579a"
+    ],
+    "sha256": "12e53d3c23af61c5a57e9c3bc11680a042ccd674537ccb059fcc11a7a54d579a"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q4_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:16f7d04308153052d6d072a05c9f724fb26d48a474c61068ebefc2cd8dd2ef4f"
+    ],
+    "sha256": "16f7d04308153052d6d072a05c9f724fb26d48a474c61068ebefc2cd8dd2ef4f"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q5_K_S",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:ac2623c15c25031ec38affb1121c6306a821269634998846e7dd36734d2ebfe2"
+    ],
+    "sha256": "ac2623c15c25031ec38affb1121c6306a821269634998846e7dd36734d2ebfe2"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q5_K_M",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:dfe8f438a259e2517ca7bc8c4b46b6fddb5b7beca53f934d8ebac14bc7477b2b"
+    ],
+    "sha256": "dfe8f438a259e2517ca7bc8c4b46b6fddb5b7beca53f934d8ebac14bc7477b2b"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-q6_K",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:086765ac0eb65076bb545f2b2a63f52d471c415cbb7fd0dec38ffd455eacae00"
+    ],
+    "sha256": "086765ac0eb65076bb545f2b2a63f52d471c415cbb7fd0dec38ffd455eacae00"
+  },
+  {
+    "name": "deepseek-coder_33b-instruct-fp16",
+    "provider_url": "https://ollama.com/library/deepseek-coder",
+    "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:0b22bb4a1f6de3833c6068e290d1cf44883133a340317e7a2503cd252ff0c985"
+    ],
+    "sha256": "0b22bb4a1f6de3833c6068e290d1cf44883133a340317e7a2503cd252ff0c985"
   },
   {
     "name": "gemma_2b",

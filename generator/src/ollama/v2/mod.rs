@@ -33,6 +33,7 @@ fn get_provider_url(name: &str) -> String {
 
 async fn get_manifest(name: &str, tag: &str) -> Result<manifest::Manifest> {
     let url = get_manifest_url(name, tag);
+    println!("Handling: {}", url);
     let client = Client::new();
     client
         .get(url)

@@ -11,12 +11,110 @@
   chat_template: "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
 
   tags:
+    - latest
     - 1.3b
-    - 6.7b
-    - 1.3b-instruct
-    - 6.7b-instruct
+    - base
     - 33b
+    - 6.7b
+    - instruct
+    - 1.3b-base
+    - 1.3b-instruct
+    - 6.7b-base
+    - 6.7b-instruct
     - 33b-instruct
+    - 33b-base
+    - 1.3b-base-q4_0
+    - 1.3b-base-q4_1
+    - 1.3b-base-q5_0
+    - 1.3b-base-q5_1
+    - 1.3b-base-q8_0
+    - 1.3b-base-q2_K
+    - 1.3b-base-q3_K_S
+    - 1.3b-base-q3_K_M
+    - 1.3b-base-q3_K_L
+    - 1.3b-base-q4_K_S
+    - 1.3b-base-q4_K_M
+    - 1.3b-base-q5_K_S
+    - 1.3b-base-q5_K_M
+    - 1.3b-base-q6_K
+    - 1.3b-base-fp16
+    - 1.3b-instruct-q4_0
+    - 1.3b-instruct-q4_1
+    - 1.3b-instruct-q5_0
+    - 1.3b-instruct-q5_1
+    - 1.3b-instruct-q8_0
+    - 1.3b-instruct-q2_K
+    - 1.3b-instruct-q3_K_S
+    - 1.3b-instruct-q3_K_M
+    - 1.3b-instruct-q3_K_L
+    - 1.3b-instruct-q4_K_S
+    - 1.3b-instruct-q4_K_M
+    - 1.3b-instruct-q5_K_S
+    - 1.3b-instruct-q5_K_M
+    - 1.3b-instruct-q6_K
+    - 1.3b-instruct-fp16
+    - 6.7b-base-q4_0
+    - 6.7b-base-q4_1
+    - 6.7b-base-q5_0
+    - 6.7b-base-q5_1
+    - 6.7b-base-q8_0
+    - 6.7b-base-q2_K
+    - 6.7b-base-q3_K_S
+    - 6.7b-base-q3_K_M
+    - 6.7b-base-q3_K_L
+    - 6.7b-base-q4_K_S
+    - 6.7b-base-q4_K_M
+    - 6.7b-base-q5_K_S
+    - 6.7b-base-q5_K_M
+    - 6.7b-base-q6_K
+    - 6.7b-base-fp16
+    - 6.7b-instruct-q4_0
+    - 6.7b-instruct-q4_1
+    - 6.7b-instruct-q5_0
+    - 6.7b-instruct-q5_1
+    - 6.7b-instruct-q8_0
+    - 6.7b-instruct-q2_K
+    - 6.7b-instruct-q3_K_S
+    - 6.7b-instruct-q3_K_M
+    - 6.7b-instruct-q3_K_L
+    - 6.7b-instruct-q4_K_S
+    - 6.7b-instruct-q4_K_M
+    - 6.7b-instruct-q5_K_S
+    - 6.7b-instruct-q5_K_M
+    - 6.7b-instruct-q6_K
+    - 6.7b-instruct-fp16
+    - 33b-base-q4_0
+    - 33b-base-q4_1
+    - 33b-base-q5_0
+    - 33b-base-q5_1
+    - 33b-base-q8_0
+    - 33b-base-q2_K
+    - 33b-base-q3_K_S
+    - 33b-base-q3_K_M
+    - 33b-base-q3_K_L
+    - 33b-base-q4_K_S
+    - 33b-base-q4_K_M
+    - 33b-base-q5_K_S
+    - 33b-base-q5_K_M
+    - 33b-base-q6_K
+    - 33b-base-fp16
+    - 33b-instruct-q4_0
+    - 33b-instruct-q4_1
+    - 33b-instruct-q5_0
+    - 33b-instruct-q5_1
+    - 33b-instruct-q8_0
+    - 33b-instruct-q2_K
+    - 33b-instruct-q3_K_S
+    - 33b-instruct-q3_K_M
+    - 33b-instruct-q3_K_L
+    - 33b-instruct-q4_K_S
+    - 33b-instruct-q4_K_M
+    - 33b-instruct-q5_K_S
+    - 33b-instruct-q5_K_M
+    - 33b-instruct-q6_K
+    - 33b-instruct-fp16
+
+
 
 - name: gemma
   chat_template: "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
