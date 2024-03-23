@@ -12,6 +12,8 @@ pub enum LayerMediaType {
     Template,
     #[serde(rename = "application/vnd.ollama.image.params")]
     Params,
+    #[serde(rename = "application/vnd.ollama.image.system")]
+    System,
 }
 
 #[derive(Deserialize, Debug)]
