@@ -17,7 +17,7 @@ pub struct Model {
 
     /// Template for chat
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub chat_completion: Option<String>,
+    pub chat_template: Option<String>,
 
     /// urls to download the model
     pub urls: Vec<String>,
@@ -34,7 +34,7 @@ pub struct ModelInput {
 
     /// Template for chat
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub chat_completion: Option<String>,
+    pub chat_template: Option<String>,
 
     /// Name of the model
     pub name: String,

@@ -67,6 +67,6 @@ pub async fn parse_model(name: &str, tag: &str) -> Result<Model> {
 
         // To be filled by the yaml
         prompt_template: None,
-        chat_completion: None,
+        chat_template: None,
     })
 }

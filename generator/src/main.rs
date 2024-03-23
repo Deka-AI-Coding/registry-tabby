@@ -14,7 +14,18 @@ async fn convert(model_input: &ModelInput) -> anyhow::Result<Vec<Model>> {
     let mut out = vec![];
 
     for tag in &model_input.tags {
-        out.push(ollama::parse_model(&model_input.name, tag).await?)
+        let mut tmp_model = ollama::parse_model(&model_input.name, tag).await?;
+
+        // Override
+        model_input.chat_template.as_ref().inspect(|m| {
+            tmp_model.chat_template.get_or_insert(m.to_string());
+        });
+
+        model_input.prompt_template.as_ref().inspect(|m| {
+            tmp_model.prompt_template.get_or_insert(m.to_string());
+        });
+
+        out.push(tmp_model)
     }
 
     Ok(out)
