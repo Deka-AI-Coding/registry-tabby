@@ -5,7 +5,7 @@ use reqwest::Client;
 mod manifest;
 
 /// URL for model downloading
-const REGISTRY_URL_BASE: &str = "https://registry.ollama.ai/v2/library";
+const REGISTRY_URL_BASE: &str = "https://registry.ollama.ai:443/v2/library";
 /// URL for user available info
 const PUBLIC_URL_BASE: &str = "https://ollama.com/library";
 
