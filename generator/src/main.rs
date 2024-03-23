@@ -10,12 +10,14 @@ use crate::model::ModelInput;
 mod model;
 mod ollama;
 
-fn convert(model_input: &ModelInput) -> anyhow::Result<Vec<Model>> {
-    model_input
-        .tags
-        .iter()
-        .map(|tag| ollama::parse_model(&model_input.name, tag))
-        .collect()
+async fn convert(model_input: &ModelInput) -> anyhow::Result<Vec<Model>> {
+    let mut out = vec![];
+
+    for tag in &model_input.tags {
+        out.push(ollama::parse_model(&model_input.name, tag).await?)
+    }
+
+    Ok(out)
 }
 
 #[tokio::main]
@@ -31,10 +33,14 @@ async fn main() -> Result<()> {
     let output_file = File::create(&args[2])?;
 
     let inputs: Vec<ModelInput> = serde_yaml::from_reader(input_file)?;
-    let processed: Vec<Vec<Model>> = inputs.iter().map(convert).collect::<Result<_>>()?;
-    let flatten: Vec<Model> = processed.into_iter().flatten().collect();
+    let mut outputs = vec![];
 
-    serde_json::to_writer_pretty(output_file, &flatten)?;
+    for input in &inputs {
+        let mut out_models = convert(input).await?;
+        outputs.append(&mut out_models);
+    }
+
+    serde_json::to_writer_pretty(output_file, &outputs)?;
 
     Ok(())
 }
