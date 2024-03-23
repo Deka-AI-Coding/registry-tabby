@@ -1,5 +1,15 @@
 [
   {
+    "name": "starcoder_latest",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b4a4eea1f5d801ddec62c03266ef18be14fca16332cf82ff332782d4f14dc21f"
+    ],
+    "sha256": "b4a4eea1f5d801ddec62c03266ef18be14fca16332cf82ff332782d4f14dc21f"
+  },
+  {
     "name": "starcoder_1b",
     "provider_url": "https://ollama.com/library/starcoder",
     "license_url": "https://ollama.com/library/starcoder",
@@ -8,6 +18,16 @@
       "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:397f02a8d32c293bcb63e2578a03a3d8430d8ec744f5b3180cc677e702fcd2cf"
     ],
     "sha256": "397f02a8d32c293bcb63e2578a03a3d8430d8ec744f5b3180cc677e702fcd2cf"
+  },
+  {
+    "name": "starcoder_15b",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:5f0c96a0687463495a4d0815300ec6fffd5f0b7fb49db3c2fad4d8cff85960e2"
+    ],
+    "sha256": "5f0c96a0687463495a4d0815300ec6fffd5f0b7fb49db3c2fad4d8cff85960e2"
   },
   {
     "name": "starcoder_3b",
@@ -30,7 +50,57 @@
     "sha256": "1f8634674678569060a61caa4ed6f967bbe3ffbdbde2d3edd0055ff160d1fdd9"
   },
   {
-    "name": "starcoder_15b",
+    "name": "starcoder_1b-base",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:397f02a8d32c293bcb63e2578a03a3d8430d8ec744f5b3180cc677e702fcd2cf"
+    ],
+    "sha256": "397f02a8d32c293bcb63e2578a03a3d8430d8ec744f5b3180cc677e702fcd2cf"
+  },
+  {
+    "name": "starcoder_3b-base",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b4a4eea1f5d801ddec62c03266ef18be14fca16332cf82ff332782d4f14dc21f"
+    ],
+    "sha256": "b4a4eea1f5d801ddec62c03266ef18be14fca16332cf82ff332782d4f14dc21f"
+  },
+  {
+    "name": "starcoder_7b-base",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:1f8634674678569060a61caa4ed6f967bbe3ffbdbde2d3edd0055ff160d1fdd9"
+    ],
+    "sha256": "1f8634674678569060a61caa4ed6f967bbe3ffbdbde2d3edd0055ff160d1fdd9"
+  },
+  {
+    "name": "starcoder_15b-base",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:9944bed63e6f78ce6c8d1cb2df204ca353fd1d33342b24a9e5b0f352f56f1a65"
+    ],
+    "sha256": "9944bed63e6f78ce6c8d1cb2df204ca353fd1d33342b24a9e5b0f352f56f1a65"
+  },
+  {
+    "name": "starcoder_15b-plus",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b90a7cf29efe302377ef2718dc4a7924c8f0ef4e455a3f8ecf5642b3ba2be9b1"
+    ],
+    "sha256": "b90a7cf29efe302377ef2718dc4a7924c8f0ef4e455a3f8ecf5642b3ba2be9b1"
+  },
+  {
+    "name": "starcoder_15b-q4_0",
     "provider_url": "https://ollama.com/library/starcoder",
     "license_url": "https://ollama.com/library/starcoder",
     "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
@@ -38,6 +108,896 @@
       "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:5f0c96a0687463495a4d0815300ec6fffd5f0b7fb49db3c2fad4d8cff85960e2"
     ],
     "sha256": "5f0c96a0687463495a4d0815300ec6fffd5f0b7fb49db3c2fad4d8cff85960e2"
+  },
+  {
+    "name": "starcoder_15b-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:224e8d8383481c8b8c1312074355a01bb87a7ee7d1d66c63e1dc23a0f4fddbb9"
+    ],
+    "sha256": "224e8d8383481c8b8c1312074355a01bb87a7ee7d1d66c63e1dc23a0f4fddbb9"
+  },
+  {
+    "name": "starcoder_15b-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:9928f8e2eff0e21f6b06b8163637a4b650919f5f34175e6cf12e09ce34bb9c27"
+    ],
+    "sha256": "9928f8e2eff0e21f6b06b8163637a4b650919f5f34175e6cf12e09ce34bb9c27"
+  },
+  {
+    "name": "starcoder_15b-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:6193612c2e4c20b5eec1a41ebea3c0be339e76b1c9d50fa5e7d551b468675b8d"
+    ],
+    "sha256": "6193612c2e4c20b5eec1a41ebea3c0be339e76b1c9d50fa5e7d551b468675b8d"
+  },
+  {
+    "name": "starcoder_15b-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:43b4874f0e08720c4d4cebda21d8864ae31af3f5a5b2be2db5d473ddb7b0c83a"
+    ],
+    "sha256": "43b4874f0e08720c4d4cebda21d8864ae31af3f5a5b2be2db5d473ddb7b0c83a"
+  },
+  {
+    "name": "starcoder_15b-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:54daf30af1610a823a72b16717ca33648d24b1f4eaab2f4f28ce020996489eef"
+    ],
+    "sha256": "54daf30af1610a823a72b16717ca33648d24b1f4eaab2f4f28ce020996489eef"
+  },
+  {
+    "name": "starcoder_15b-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:5588fa23004ea3386284fdc556a450388e1fab1f8d36fabb072986bdb13e0f1a"
+    ],
+    "sha256": "5588fa23004ea3386284fdc556a450388e1fab1f8d36fabb072986bdb13e0f1a"
+  },
+  {
+    "name": "starcoder_15b-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:1c875bbbf08ff28e6c1ff8f60b98810f3d6423c258b8df9c14d08e40c1bf3140"
+    ],
+    "sha256": "1c875bbbf08ff28e6c1ff8f60b98810f3d6423c258b8df9c14d08e40c1bf3140"
+  },
+  {
+    "name": "starcoder_15b-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:755a42898cac13bddd45bee24461ec0c4e33986dfe880f07294fa9f8bab286ee"
+    ],
+    "sha256": "755a42898cac13bddd45bee24461ec0c4e33986dfe880f07294fa9f8bab286ee"
+  },
+  {
+    "name": "starcoder_15b-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b9dbe656eeed002136062f7ae51a8f5036cf0c64e55521f89d4c546cea4066f3"
+    ],
+    "sha256": "b9dbe656eeed002136062f7ae51a8f5036cf0c64e55521f89d4c546cea4066f3"
+  },
+  {
+    "name": "starcoder_15b-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:64baf853f84196b004c68555a1753f22b110137841e515fc2495e001f477b09b"
+    ],
+    "sha256": "64baf853f84196b004c68555a1753f22b110137841e515fc2495e001f477b09b"
+  },
+  {
+    "name": "starcoder_15b-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:170a9901e97bcc2912c3bbf931addd8b86c8b112ce27d71c1ee06a3257982606"
+    ],
+    "sha256": "170a9901e97bcc2912c3bbf931addd8b86c8b112ce27d71c1ee06a3257982606"
+  },
+  {
+    "name": "starcoder_15b-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:f2a055fc8955b53c7d5b20df1bf18242e156e1a2e83221777bb86f16c0436a6d"
+    ],
+    "sha256": "f2a055fc8955b53c7d5b20df1bf18242e156e1a2e83221777bb86f16c0436a6d"
+  },
+  {
+    "name": "starcoder_15b-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:a2a793fdd477c199f8707676db5695f080753c5d676fa83c4ebe7a3397095c39"
+    ],
+    "sha256": "a2a793fdd477c199f8707676db5695f080753c5d676fa83c4ebe7a3397095c39"
+  },
+  {
+    "name": "starcoder_15b-fp16",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:3bb5b7ab3e8d40cd75119e1a66a9cc1a6e766a3da6d7829bac5353097fe696d6"
+    ],
+    "sha256": "3bb5b7ab3e8d40cd75119e1a66a9cc1a6e766a3da6d7829bac5353097fe696d6"
+  },
+  {
+    "name": "starcoder_1b-base-q4_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:397f02a8d32c293bcb63e2578a03a3d8430d8ec744f5b3180cc677e702fcd2cf"
+    ],
+    "sha256": "397f02a8d32c293bcb63e2578a03a3d8430d8ec744f5b3180cc677e702fcd2cf"
+  },
+  {
+    "name": "starcoder_1b-base-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:26195b4eb528467702328a493ac02b9ef9cc3ad25b668c63e0628e4e395dae68"
+    ],
+    "sha256": "26195b4eb528467702328a493ac02b9ef9cc3ad25b668c63e0628e4e395dae68"
+  },
+  {
+    "name": "starcoder_1b-base-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:7c51cd49aeb4c87def3eb91e753f8cab82fb6a965d9adf654dff42c0aef63b76"
+    ],
+    "sha256": "7c51cd49aeb4c87def3eb91e753f8cab82fb6a965d9adf654dff42c0aef63b76"
+  },
+  {
+    "name": "starcoder_1b-base-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:d760da29539a42893eeeada5e43a0840a4534bdb9d1849d7ef3ace761cb2c8ad"
+    ],
+    "sha256": "d760da29539a42893eeeada5e43a0840a4534bdb9d1849d7ef3ace761cb2c8ad"
+  },
+  {
+    "name": "starcoder_1b-base-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:f28ca263bb023e9076784b8c2cbeb68bc589cfc3ad28cc3f3b265e20d984277a"
+    ],
+    "sha256": "f28ca263bb023e9076784b8c2cbeb68bc589cfc3ad28cc3f3b265e20d984277a"
+  },
+  {
+    "name": "starcoder_1b-base-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:85217b3fed2fe15d56f7715f30e93b8e2179a88e9b8f16552108dc53600ac5bb"
+    ],
+    "sha256": "85217b3fed2fe15d56f7715f30e93b8e2179a88e9b8f16552108dc53600ac5bb"
+  },
+  {
+    "name": "starcoder_1b-base-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:e1efe52151777697d425fbaf65bb357dae3f79c6cb533fb9733145de6d0e3713"
+    ],
+    "sha256": "e1efe52151777697d425fbaf65bb357dae3f79c6cb533fb9733145de6d0e3713"
+  },
+  {
+    "name": "starcoder_1b-base-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:29e87b1db6c168395d9b0c246b6b3bbc80307daf82e34a085a46d9d6800bdba8"
+    ],
+    "sha256": "29e87b1db6c168395d9b0c246b6b3bbc80307daf82e34a085a46d9d6800bdba8"
+  },
+  {
+    "name": "starcoder_1b-base-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:ffd65db9653b007d2263407e1b936efd1ac0ddb079b9b04a258d454d37eaaff2"
+    ],
+    "sha256": "ffd65db9653b007d2263407e1b936efd1ac0ddb079b9b04a258d454d37eaaff2"
+  },
+  {
+    "name": "starcoder_1b-base-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:025517c2e75dcd23a24859a08ce612951bef6d95b02f017cf79319dd2ce1de31"
+    ],
+    "sha256": "025517c2e75dcd23a24859a08ce612951bef6d95b02f017cf79319dd2ce1de31"
+  },
+  {
+    "name": "starcoder_1b-base-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:3afbbeca1cb2f492428f47c21b651af8ab20cb5c9088643f496a7abc668aaac9"
+    ],
+    "sha256": "3afbbeca1cb2f492428f47c21b651af8ab20cb5c9088643f496a7abc668aaac9"
+  },
+  {
+    "name": "starcoder_1b-base-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:531a9dec442f9834d295ff471365a9a5196179e988f9a422763c03bec1de5840"
+    ],
+    "sha256": "531a9dec442f9834d295ff471365a9a5196179e988f9a422763c03bec1de5840"
+  },
+  {
+    "name": "starcoder_1b-base-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:8c2139007a13b70388d7f061e5e759ec3626e57d9b7482102047c3658bda7bc1"
+    ],
+    "sha256": "8c2139007a13b70388d7f061e5e759ec3626e57d9b7482102047c3658bda7bc1"
+  },
+  {
+    "name": "starcoder_1b-base-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:68385c870e5b48147c18a99bd53a268e33b49a029a141787bcca249647670bd5"
+    ],
+    "sha256": "68385c870e5b48147c18a99bd53a268e33b49a029a141787bcca249647670bd5"
+  },
+  {
+    "name": "starcoder_1b-base-fp16",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:529ab84e9bb93f8aaa325cfbbddc25c1eed32da4b15d9905350b45f745a85cd2"
+    ],
+    "sha256": "529ab84e9bb93f8aaa325cfbbddc25c1eed32da4b15d9905350b45f745a85cd2"
+  },
+  {
+    "name": "starcoder_3b-base-q4_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b4a4eea1f5d801ddec62c03266ef18be14fca16332cf82ff332782d4f14dc21f"
+    ],
+    "sha256": "b4a4eea1f5d801ddec62c03266ef18be14fca16332cf82ff332782d4f14dc21f"
+  },
+  {
+    "name": "starcoder_3b-base-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:1245ce5259829efd397252ae5ea8f29b4f9106470d0312ea35c1e69a12543832"
+    ],
+    "sha256": "1245ce5259829efd397252ae5ea8f29b4f9106470d0312ea35c1e69a12543832"
+  },
+  {
+    "name": "starcoder_3b-base-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:8353e76f0836fc52896701c261aa9596330d513f86b307d1b923b528da5cdf5a"
+    ],
+    "sha256": "8353e76f0836fc52896701c261aa9596330d513f86b307d1b923b528da5cdf5a"
+  },
+  {
+    "name": "starcoder_3b-base-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b5e7c28a7c511fb50af901212ff28f81f7bd047e52b034283b63e9027366f6f0"
+    ],
+    "sha256": "b5e7c28a7c511fb50af901212ff28f81f7bd047e52b034283b63e9027366f6f0"
+  },
+  {
+    "name": "starcoder_3b-base-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:974390d8e1594fdd160da8bc93548af6c2eff48089711d182b56005b0fea3d3e"
+    ],
+    "sha256": "974390d8e1594fdd160da8bc93548af6c2eff48089711d182b56005b0fea3d3e"
+  },
+  {
+    "name": "starcoder_3b-base-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:420be439109775f809c47384a70f1fd500ed204cd0f6d40a122f19b5518376ed"
+    ],
+    "sha256": "420be439109775f809c47384a70f1fd500ed204cd0f6d40a122f19b5518376ed"
+  },
+  {
+    "name": "starcoder_3b-base-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:d4cf7a43dc91f0b26f9f94fbe3d1d9d407aba99585c378586de5466d81035e5a"
+    ],
+    "sha256": "d4cf7a43dc91f0b26f9f94fbe3d1d9d407aba99585c378586de5466d81035e5a"
+  },
+  {
+    "name": "starcoder_3b-base-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:cdc1f805371076971a8c3ff1deee7c4b04222721c7515b090258d6ec726a6859"
+    ],
+    "sha256": "cdc1f805371076971a8c3ff1deee7c4b04222721c7515b090258d6ec726a6859"
+  },
+  {
+    "name": "starcoder_3b-base-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:3d5614d576f35fa7de2d87d72efcd5f4f1e093e7746df15e48c1be60f3f1b579"
+    ],
+    "sha256": "3d5614d576f35fa7de2d87d72efcd5f4f1e093e7746df15e48c1be60f3f1b579"
+  },
+  {
+    "name": "starcoder_3b-base-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:3605a889cbcfd4890e8da10230b55a24e6cae7efe86051987c66c710c519f0d3"
+    ],
+    "sha256": "3605a889cbcfd4890e8da10230b55a24e6cae7efe86051987c66c710c519f0d3"
+  },
+  {
+    "name": "starcoder_3b-base-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:4ebc1b22075dc8532d75b68a4926ae84afab775255a0b13cda01ffcf1da4236a"
+    ],
+    "sha256": "4ebc1b22075dc8532d75b68a4926ae84afab775255a0b13cda01ffcf1da4236a"
+  },
+  {
+    "name": "starcoder_3b-base-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:ec444fdb87c7e03cfa90a66912e26b1b823df2897fe74aa7f7663873ea2e30ae"
+    ],
+    "sha256": "ec444fdb87c7e03cfa90a66912e26b1b823df2897fe74aa7f7663873ea2e30ae"
+  },
+  {
+    "name": "starcoder_3b-base-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b5c1a0ec09f6d675173ad8067b664e37e8fcf8d49131d117782eb93c19136e6c"
+    ],
+    "sha256": "b5c1a0ec09f6d675173ad8067b664e37e8fcf8d49131d117782eb93c19136e6c"
+  },
+  {
+    "name": "starcoder_3b-base-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:d9df30b9607c1308b899b0ab346f28b97cf4175f1712f90ffa33f7edffce1f8a"
+    ],
+    "sha256": "d9df30b9607c1308b899b0ab346f28b97cf4175f1712f90ffa33f7edffce1f8a"
+  },
+  {
+    "name": "starcoder_3b-base-fp16",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:0fba059b1d5951e529dc14f95b564e0639aebe3c2e310d8dd37791ee77e05ff2"
+    ],
+    "sha256": "0fba059b1d5951e529dc14f95b564e0639aebe3c2e310d8dd37791ee77e05ff2"
+  },
+  {
+    "name": "starcoder_7b-base-q4_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:1f8634674678569060a61caa4ed6f967bbe3ffbdbde2d3edd0055ff160d1fdd9"
+    ],
+    "sha256": "1f8634674678569060a61caa4ed6f967bbe3ffbdbde2d3edd0055ff160d1fdd9"
+  },
+  {
+    "name": "starcoder_7b-base-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:a2cec0245d4007ab56aa651fc4d6d76e9b3f031fbd749fe9570492d4a636a433"
+    ],
+    "sha256": "a2cec0245d4007ab56aa651fc4d6d76e9b3f031fbd749fe9570492d4a636a433"
+  },
+  {
+    "name": "starcoder_7b-base-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:d2267f9992d1a27b42ab52bcffb5d35c538058f37ba4597ca7e0297222893bd8"
+    ],
+    "sha256": "d2267f9992d1a27b42ab52bcffb5d35c538058f37ba4597ca7e0297222893bd8"
+  },
+  {
+    "name": "starcoder_7b-base-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:9fd4ad98a6b350bf8e627f147537cb57cc61e74ed5d6ed9f5e9444ebf322b3cf"
+    ],
+    "sha256": "9fd4ad98a6b350bf8e627f147537cb57cc61e74ed5d6ed9f5e9444ebf322b3cf"
+  },
+  {
+    "name": "starcoder_7b-base-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:47d3d082b7a7424b4ed55d0d2bb115c840fbca787e5756c56e51fbec71fb87a4"
+    ],
+    "sha256": "47d3d082b7a7424b4ed55d0d2bb115c840fbca787e5756c56e51fbec71fb87a4"
+  },
+  {
+    "name": "starcoder_7b-base-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:c4e8e6a2bd6124212e063a5346083187b6c988b839b51cb4d2919a3992672496"
+    ],
+    "sha256": "c4e8e6a2bd6124212e063a5346083187b6c988b839b51cb4d2919a3992672496"
+  },
+  {
+    "name": "starcoder_7b-base-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:890ce4e99d24b5f886c2302c44e99b151d26177e42480924cf5c759d893e5835"
+    ],
+    "sha256": "890ce4e99d24b5f886c2302c44e99b151d26177e42480924cf5c759d893e5835"
+  },
+  {
+    "name": "starcoder_7b-base-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:79f27ebdaf3ba1e14df8356e85067630c7915ec2a610237fc70b22033303d054"
+    ],
+    "sha256": "79f27ebdaf3ba1e14df8356e85067630c7915ec2a610237fc70b22033303d054"
+  },
+  {
+    "name": "starcoder_7b-base-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:9c9f4d8eca48a71ca457fe5817c88a8e5fba661c5caadfd1f2c15f89440bd044"
+    ],
+    "sha256": "9c9f4d8eca48a71ca457fe5817c88a8e5fba661c5caadfd1f2c15f89440bd044"
+  },
+  {
+    "name": "starcoder_7b-base-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:8633bbe9f1c3639f482fe1cdcb770f1814985b920bb1121ebff6331561cc5507"
+    ],
+    "sha256": "8633bbe9f1c3639f482fe1cdcb770f1814985b920bb1121ebff6331561cc5507"
+  },
+  {
+    "name": "starcoder_7b-base-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:8b2cd47f99fe1c729777d6672e7d1180cacd7dfdd572142322f77f9f7d477456"
+    ],
+    "sha256": "8b2cd47f99fe1c729777d6672e7d1180cacd7dfdd572142322f77f9f7d477456"
+  },
+  {
+    "name": "starcoder_7b-base-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:10ff354dc60643269e7cf1f7c748efaa1252e26cab733ef286f5b4bdf0470ee6"
+    ],
+    "sha256": "10ff354dc60643269e7cf1f7c748efaa1252e26cab733ef286f5b4bdf0470ee6"
+  },
+  {
+    "name": "starcoder_7b-base-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:86a0a776f88157b173f0f6b7b052db7c1bd4f8acccdd7086c79d69728cf9294c"
+    ],
+    "sha256": "86a0a776f88157b173f0f6b7b052db7c1bd4f8acccdd7086c79d69728cf9294c"
+  },
+  {
+    "name": "starcoder_7b-base-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:550b1d9c16e41a2b4b0fa358eafd71875194dc813df140d1d17342a0925bcfc3"
+    ],
+    "sha256": "550b1d9c16e41a2b4b0fa358eafd71875194dc813df140d1d17342a0925bcfc3"
+  },
+  {
+    "name": "starcoder_7b-base-fp16",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:2f87fb04045637b933c29065e294bf569f74a3ac79aef46cfd35e0e0d2d8226e"
+    ],
+    "sha256": "2f87fb04045637b933c29065e294bf569f74a3ac79aef46cfd35e0e0d2d8226e"
+  },
+  {
+    "name": "starcoder_15b-base-q4_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:9944bed63e6f78ce6c8d1cb2df204ca353fd1d33342b24a9e5b0f352f56f1a65"
+    ],
+    "sha256": "9944bed63e6f78ce6c8d1cb2df204ca353fd1d33342b24a9e5b0f352f56f1a65"
+  },
+  {
+    "name": "starcoder_15b-base-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:fbd4bf22be5c0fb34056df0049677193f2fb819327586a12d2457d7435d95690"
+    ],
+    "sha256": "fbd4bf22be5c0fb34056df0049677193f2fb819327586a12d2457d7435d95690"
+  },
+  {
+    "name": "starcoder_15b-base-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:df16184cb4e738b19cfe3c1169e851b136d8bc13bafec7c70f52231933f03d09"
+    ],
+    "sha256": "df16184cb4e738b19cfe3c1169e851b136d8bc13bafec7c70f52231933f03d09"
+  },
+  {
+    "name": "starcoder_15b-base-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:c89751c1f1410b856413ec2f790302254588409a104f2c27e9c67b55ba99f18d"
+    ],
+    "sha256": "c89751c1f1410b856413ec2f790302254588409a104f2c27e9c67b55ba99f18d"
+  },
+  {
+    "name": "starcoder_15b-base-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:c49ae2bbdbd2685d0f94f330cc52592e48ce751597e75f596b6ea07b7a0ed611"
+    ],
+    "sha256": "c49ae2bbdbd2685d0f94f330cc52592e48ce751597e75f596b6ea07b7a0ed611"
+  },
+  {
+    "name": "starcoder_15b-base-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:dda1f90d9b0d3f1881cc1b4a512131660b7b3fdeb14eeb88bbff20c7681719a8"
+    ],
+    "sha256": "dda1f90d9b0d3f1881cc1b4a512131660b7b3fdeb14eeb88bbff20c7681719a8"
+  },
+  {
+    "name": "starcoder_15b-base-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:cb628210984c439dadb277331fe2a4b943c460f8aeb51f28eeb000e33ac074aa"
+    ],
+    "sha256": "cb628210984c439dadb277331fe2a4b943c460f8aeb51f28eeb000e33ac074aa"
+  },
+  {
+    "name": "starcoder_15b-base-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:e4f7b5cb863ca3b9a6ed5abeafbc0f02b7e4282104bb3cd3a9298eed5ab28d41"
+    ],
+    "sha256": "e4f7b5cb863ca3b9a6ed5abeafbc0f02b7e4282104bb3cd3a9298eed5ab28d41"
+  },
+  {
+    "name": "starcoder_15b-base-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:e0cefd365fde659a9f3b4c1d10759336493af549131c9536b194ef96994002fd"
+    ],
+    "sha256": "e0cefd365fde659a9f3b4c1d10759336493af549131c9536b194ef96994002fd"
+  },
+  {
+    "name": "starcoder_15b-base-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:67bc922254aa71d742ac05f3c6f41cd72c2085952a61ea464363ee71c929092c"
+    ],
+    "sha256": "67bc922254aa71d742ac05f3c6f41cd72c2085952a61ea464363ee71c929092c"
+  },
+  {
+    "name": "starcoder_15b-base-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:e74b60d6903b78f9a1a71282738c6f44eeb43b35dbd3b518ce00be8086064dfb"
+    ],
+    "sha256": "e74b60d6903b78f9a1a71282738c6f44eeb43b35dbd3b518ce00be8086064dfb"
+  },
+  {
+    "name": "starcoder_15b-base-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:795c458e1dc3a96e38e0eb1b94793f08144496aec99eee6dc9610f19b0f7f3ce"
+    ],
+    "sha256": "795c458e1dc3a96e38e0eb1b94793f08144496aec99eee6dc9610f19b0f7f3ce"
+  },
+  {
+    "name": "starcoder_15b-base-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:acebcdf512f99587084ad840c4075b7469a3e3ca96083f319f54892f42a42ce5"
+    ],
+    "sha256": "acebcdf512f99587084ad840c4075b7469a3e3ca96083f319f54892f42a42ce5"
+  },
+  {
+    "name": "starcoder_15b-base-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:d575bfc739426a6fd0b451a6e797bf15651cc73b3510cdbd4e63800fbdd061d6"
+    ],
+    "sha256": "d575bfc739426a6fd0b451a6e797bf15651cc73b3510cdbd4e63800fbdd061d6"
+  },
+  {
+    "name": "starcoder_15b-base-fp16",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:27673fa715597ca0011e5903f4f4b7fe53f38fa1c653cb01b7897e97ffcad0cc"
+    ],
+    "sha256": "27673fa715597ca0011e5903f4f4b7fe53f38fa1c653cb01b7897e97ffcad0cc"
+  },
+  {
+    "name": "starcoder_15b-plus-q4_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b90a7cf29efe302377ef2718dc4a7924c8f0ef4e455a3f8ecf5642b3ba2be9b1"
+    ],
+    "sha256": "b90a7cf29efe302377ef2718dc4a7924c8f0ef4e455a3f8ecf5642b3ba2be9b1"
+  },
+  {
+    "name": "starcoder_15b-plus-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:5f7384d615eb9e41a554dc606c93562b5d605e8c325c5ae94cc0e282e67832f5"
+    ],
+    "sha256": "5f7384d615eb9e41a554dc606c93562b5d605e8c325c5ae94cc0e282e67832f5"
+  },
+  {
+    "name": "starcoder_15b-plus-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:4fead320b524cdc1aa55e4dc18fb102164326bc33427bb024278d52acec09532"
+    ],
+    "sha256": "4fead320b524cdc1aa55e4dc18fb102164326bc33427bb024278d52acec09532"
+  },
+  {
+    "name": "starcoder_15b-plus-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:f1e211406599e9ae1fd09c7c3bed4e14578922498efc8744ebc5d3164055a2f4"
+    ],
+    "sha256": "f1e211406599e9ae1fd09c7c3bed4e14578922498efc8744ebc5d3164055a2f4"
+  },
+  {
+    "name": "starcoder_15b-plus-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:e644dffee39ccf6c0af56fe849ddfb8d1e8645d3ebe79bb87f2cbc06c19d657c"
+    ],
+    "sha256": "e644dffee39ccf6c0af56fe849ddfb8d1e8645d3ebe79bb87f2cbc06c19d657c"
+  },
+  {
+    "name": "starcoder_15b-plus-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:b32eed7b4ea23ce1bd4ad5b88cf6e8076fee057cf0090a30e57c6b82f17ed297"
+    ],
+    "sha256": "b32eed7b4ea23ce1bd4ad5b88cf6e8076fee057cf0090a30e57c6b82f17ed297"
+  },
+  {
+    "name": "starcoder_15b-plus-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:83aacab6a5a284bf99ba73be10e7dc0c2b40dc4528304c7e1f2d0d94ed6410e5"
+    ],
+    "sha256": "83aacab6a5a284bf99ba73be10e7dc0c2b40dc4528304c7e1f2d0d94ed6410e5"
+  },
+  {
+    "name": "starcoder_15b-plus-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:510b65d20ad5573ea94bb67de11b20e4718d9328ea995de3e3a37ddb364b16c4"
+    ],
+    "sha256": "510b65d20ad5573ea94bb67de11b20e4718d9328ea995de3e3a37ddb364b16c4"
+  },
+  {
+    "name": "starcoder_15b-plus-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:6c881bc30318f100d23bcfcfe5cbe6fb08767425a58a8955343132ad44b15b64"
+    ],
+    "sha256": "6c881bc30318f100d23bcfcfe5cbe6fb08767425a58a8955343132ad44b15b64"
+  },
+  {
+    "name": "starcoder_15b-plus-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:c9ebf1581be887790a5fea0d0da1e95e9ad32f5b4af43d9815bf114963f47040"
+    ],
+    "sha256": "c9ebf1581be887790a5fea0d0da1e95e9ad32f5b4af43d9815bf114963f47040"
+  },
+  {
+    "name": "starcoder_15b-plus-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:c69898f962e6114b033a843516a90001f759fe159ca01000248973754cd66a05"
+    ],
+    "sha256": "c69898f962e6114b033a843516a90001f759fe159ca01000248973754cd66a05"
+  },
+  {
+    "name": "starcoder_15b-plus-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:4f337c3d33da14aa7aca568b1b082d4e12694b3b89d25cf00fed18e0a009adaa"
+    ],
+    "sha256": "4f337c3d33da14aa7aca568b1b082d4e12694b3b89d25cf00fed18e0a009adaa"
+  },
+  {
+    "name": "starcoder_15b-plus-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:a800137be41aa4b23f265e8c239dd1e5eb6c64d6b067fef2712460c55c4c6d96"
+    ],
+    "sha256": "a800137be41aa4b23f265e8c239dd1e5eb6c64d6b067fef2712460c55c4c6d96"
+  },
+  {
+    "name": "starcoder_15b-plus-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:48ccf63b86c1f5f37a2fd4a120746706dd577ff923ae8efe5bc3fd8777940e10"
+    ],
+    "sha256": "48ccf63b86c1f5f37a2fd4a120746706dd577ff923ae8efe5bc3fd8777940e10"
+  },
+  {
+    "name": "starcoder_15b-plus-fp16",
+    "provider_url": "https://ollama.com/library/starcoder",
+    "license_url": "https://ollama.com/library/starcoder",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder/blobs/sha256:0a0c1c3a3090b31b9a18b14f2234f9f8153b4c523b557dc7b6e84459d91d5576"
+    ],
+    "sha256": "0a0c1c3a3090b31b9a18b14f2234f9f8153b4c523b557dc7b6e84459d91d5576"
   },
   {
     "name": "deepseek-coder_latest",
@@ -1162,17 +2122,17 @@
     "sha256": "0b22bb4a1f6de3833c6068e290d1cf44883133a340317e7a2503cd252ff0c985"
   },
   {
-    "name": "gemma_2b",
+    "name": "gemma_latest",
     "provider_url": "https://ollama.com/library/gemma",
     "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
     "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12"
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
     ],
-    "sha256": "c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12"
+    "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
   },
   {
-    "name": "gemma_2b-instruct",
+    "name": "gemma_2b",
     "provider_url": "https://ollama.com/library/gemma",
     "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
     "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
@@ -1192,6 +2152,46 @@
     "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
   },
   {
+    "name": "gemma_instruct",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+    ],
+    "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+  },
+  {
+    "name": "gemma_text",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:df18cdedaff1b11064352ce43a1a3dec8b69af8191b901b3469998e39d4d643a"
+    ],
+    "sha256": "df18cdedaff1b11064352ce43a1a3dec8b69af8191b901b3469998e39d4d643a"
+  },
+  {
+    "name": "gemma_2b-instruct",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12"
+    ],
+    "sha256": "c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12"
+  },
+  {
+    "name": "gemma_2b-text",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:f5bcce7c7bc5e8e83365cd084c13c9f299849c2a266082c3e4e9656d2657813d"
+    ],
+    "sha256": "f5bcce7c7bc5e8e83365cd084c13c9f299849c2a266082c3e4e9656d2657813d"
+  },
+  {
     "name": "gemma_7b-instruct",
     "provider_url": "https://ollama.com/library/gemma",
     "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
@@ -1200,5 +2200,615 @@
       "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
     ],
     "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+  },
+  {
+    "name": "gemma_7b-text",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:df18cdedaff1b11064352ce43a1a3dec8b69af8191b901b3469998e39d4d643a"
+    ],
+    "sha256": "df18cdedaff1b11064352ce43a1a3dec8b69af8191b901b3469998e39d4d643a"
+  },
+  {
+    "name": "gemma_2b-instruct-q4_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12"
+    ],
+    "sha256": "c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12"
+  },
+  {
+    "name": "gemma_2b-instruct-q4_1",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:12916a0511743331d7d8717216c57accc10d7c06daa2b0c4885960ec4093a6f8"
+    ],
+    "sha256": "12916a0511743331d7d8717216c57accc10d7c06daa2b0c4885960ec4093a6f8"
+  },
+  {
+    "name": "gemma_2b-instruct-q5_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:04fc459268c4311aa4f32702a117c215eada78d1bf21def71979c022c3033a74"
+    ],
+    "sha256": "04fc459268c4311aa4f32702a117c215eada78d1bf21def71979c022c3033a74"
+  },
+  {
+    "name": "gemma_2b-instruct-q5_1",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:ddfbd4b9a2e831304ae7ecbd5b81e51caf52fe8df9df5a8026936473e0266eb7"
+    ],
+    "sha256": "ddfbd4b9a2e831304ae7ecbd5b81e51caf52fe8df9df5a8026936473e0266eb7"
+  },
+  {
+    "name": "gemma_2b-instruct-q8_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:ec68b50d23469882716782da8b680402246356c3f984e9a3b9bcc5bc15273140"
+    ],
+    "sha256": "ec68b50d23469882716782da8b680402246356c3f984e9a3b9bcc5bc15273140"
+  },
+  {
+    "name": "gemma_2b-instruct-q2_K",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:1071c1e960c5ef30f5eac159df0f30af8cde9f80a913ecaf886da3d884facd5d"
+    ],
+    "sha256": "1071c1e960c5ef30f5eac159df0f30af8cde9f80a913ecaf886da3d884facd5d"
+  },
+  {
+    "name": "gemma_2b-instruct-q3_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:4385bd922bf441e2195bd8e88cce3f858f6ee7d54fdf1f051fb4e250623edc46"
+    ],
+    "sha256": "4385bd922bf441e2195bd8e88cce3f858f6ee7d54fdf1f051fb4e250623edc46"
+  },
+  {
+    "name": "gemma_2b-instruct-q3_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:4f76842861e7cbeb6cb4ce286f1a24798a6e97a3a0625e479f404838473bc228"
+    ],
+    "sha256": "4f76842861e7cbeb6cb4ce286f1a24798a6e97a3a0625e479f404838473bc228"
+  },
+  {
+    "name": "gemma_2b-instruct-q3_K_L",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:9756ee1c0d0a1ce5ca0b350a89c14056ab31ec755d488145df31a8d44b3ea153"
+    ],
+    "sha256": "9756ee1c0d0a1ce5ca0b350a89c14056ab31ec755d488145df31a8d44b3ea153"
+  },
+  {
+    "name": "gemma_2b-instruct-q4_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:7d38db7b90e7a63c450904bf1305d9e6823692d7e647c0fc2ea345bfbf019a4f"
+    ],
+    "sha256": "7d38db7b90e7a63c450904bf1305d9e6823692d7e647c0fc2ea345bfbf019a4f"
+  },
+  {
+    "name": "gemma_2b-instruct-q4_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:7d8b4b3aa9e2dc986c22574e8ba7118014467f0c881eb48c14c0c3dcddf8fd4f"
+    ],
+    "sha256": "7d8b4b3aa9e2dc986c22574e8ba7118014467f0c881eb48c14c0c3dcddf8fd4f"
+  },
+  {
+    "name": "gemma_2b-instruct-q5_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:98450b259f6a08aa59a3c689e0f21dc53ac6e11cad11d5fae37b308de75d7c53"
+    ],
+    "sha256": "98450b259f6a08aa59a3c689e0f21dc53ac6e11cad11d5fae37b308de75d7c53"
+  },
+  {
+    "name": "gemma_2b-instruct-q5_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:58c7ea88ebf102be37676cf889d93bb9221113c599133f655024d542b6acf0b0"
+    ],
+    "sha256": "58c7ea88ebf102be37676cf889d93bb9221113c599133f655024d542b6acf0b0"
+  },
+  {
+    "name": "gemma_2b-instruct-q6_K",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:bb9cee8d0a393c20f2049e770c89d804d54e1a7bb62e0aeb72ce1cea691ca4bd"
+    ],
+    "sha256": "bb9cee8d0a393c20f2049e770c89d804d54e1a7bb62e0aeb72ce1cea691ca4bd"
+  },
+  {
+    "name": "gemma_2b-instruct-fp16",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:aea5a9041349e391ada0bf55563b7a24e25cf1ecd600f484f764536c7f271cae"
+    ],
+    "sha256": "aea5a9041349e391ada0bf55563b7a24e25cf1ecd600f484f764536c7f271cae"
+  },
+  {
+    "name": "gemma_2b-text-q4_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:f5bcce7c7bc5e8e83365cd084c13c9f299849c2a266082c3e4e9656d2657813d"
+    ],
+    "sha256": "f5bcce7c7bc5e8e83365cd084c13c9f299849c2a266082c3e4e9656d2657813d"
+  },
+  {
+    "name": "gemma_2b-text-q4_1",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:887a29235aa5f688e32ef3739b0a42b5f6456bb4b19e7eb36751d57f4ce681b8"
+    ],
+    "sha256": "887a29235aa5f688e32ef3739b0a42b5f6456bb4b19e7eb36751d57f4ce681b8"
+  },
+  {
+    "name": "gemma_2b-text-q5_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:91efe265b83d048e2085530f9b09da7042cfc48d79ef636e4a907965d05d4ede"
+    ],
+    "sha256": "91efe265b83d048e2085530f9b09da7042cfc48d79ef636e4a907965d05d4ede"
+  },
+  {
+    "name": "gemma_2b-text-q5_1",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:59bf3910d6079ec67b3cc92a2e46457b8603e5e3cfe3785c83aba1c71e6f55a5"
+    ],
+    "sha256": "59bf3910d6079ec67b3cc92a2e46457b8603e5e3cfe3785c83aba1c71e6f55a5"
+  },
+  {
+    "name": "gemma_2b-text-q8_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:768ccb3cf3d34111dd0e9659846dcc14b0cd2dfaf6229756b749b29b0bd1ea46"
+    ],
+    "sha256": "768ccb3cf3d34111dd0e9659846dcc14b0cd2dfaf6229756b749b29b0bd1ea46"
+  },
+  {
+    "name": "gemma_2b-text-q2_K",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:c6a572b250cb1c44618e991dc936089d491cbdfd2054464c5857b37b5a723ad6"
+    ],
+    "sha256": "c6a572b250cb1c44618e991dc936089d491cbdfd2054464c5857b37b5a723ad6"
+  },
+  {
+    "name": "gemma_2b-text-q3_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:34866780d61039436b97e73ee95ab467edee9b1b2e0ef7831641d3d252018365"
+    ],
+    "sha256": "34866780d61039436b97e73ee95ab467edee9b1b2e0ef7831641d3d252018365"
+  },
+  {
+    "name": "gemma_2b-text-q3_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:51bd359f35ab2c26da6d4b3880eeb3798c1d849c26689169db1639cbedd1ec7d"
+    ],
+    "sha256": "51bd359f35ab2c26da6d4b3880eeb3798c1d849c26689169db1639cbedd1ec7d"
+  },
+  {
+    "name": "gemma_2b-text-q3_K_L",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:39568f9736802d2cd76b700448ed9c7d9a8169b22c7540deb706c94f42296e88"
+    ],
+    "sha256": "39568f9736802d2cd76b700448ed9c7d9a8169b22c7540deb706c94f42296e88"
+  },
+  {
+    "name": "gemma_2b-text-q4_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:2209cf9a7000d5798ae958f2672df8010d7d034e66d323519dab374991c7feab"
+    ],
+    "sha256": "2209cf9a7000d5798ae958f2672df8010d7d034e66d323519dab374991c7feab"
+  },
+  {
+    "name": "gemma_2b-text-q4_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:838744465a9ee7278ec2dfccd04555f992bb8b1a5b1c505910744afed3a83bce"
+    ],
+    "sha256": "838744465a9ee7278ec2dfccd04555f992bb8b1a5b1c505910744afed3a83bce"
+  },
+  {
+    "name": "gemma_2b-text-q5_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:a4d7e1b9343e04c066c08f6060a03aef0f37b96168487b236b48547f71658128"
+    ],
+    "sha256": "a4d7e1b9343e04c066c08f6060a03aef0f37b96168487b236b48547f71658128"
+  },
+  {
+    "name": "gemma_2b-text-q5_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:13c8dca4f4571f1e3d0aea5e41eb1052d4f996a25e7cfaf16193b7f08029bb89"
+    ],
+    "sha256": "13c8dca4f4571f1e3d0aea5e41eb1052d4f996a25e7cfaf16193b7f08029bb89"
+  },
+  {
+    "name": "gemma_2b-text-q6_K",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:785c8ae25e440d12ec177cc5b262edf36d1f09645cebb1067fde77f530f11f7e"
+    ],
+    "sha256": "785c8ae25e440d12ec177cc5b262edf36d1f09645cebb1067fde77f530f11f7e"
+  },
+  {
+    "name": "gemma_2b-text-fp16",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:7a340b0a3396008514fb7b8dfdeb60c2e2f864c5230a3b9aff80861eeb6740ae"
+    ],
+    "sha256": "7a340b0a3396008514fb7b8dfdeb60c2e2f864c5230a3b9aff80861eeb6740ae"
+  },
+  {
+    "name": "gemma_7b-instruct-q4_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+    ],
+    "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+  },
+  {
+    "name": "gemma_7b-instruct-q4_1",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:eb455ed1760c66014861655156d129ac9fbfc50c629d2c6b9671b98d65a4b12b"
+    ],
+    "sha256": "eb455ed1760c66014861655156d129ac9fbfc50c629d2c6b9671b98d65a4b12b"
+  },
+  {
+    "name": "gemma_7b-instruct-q5_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:75456877dc7ef75576c78aa893d207cf5450642ff6eb4694e34c0a7e28bd4c51"
+    ],
+    "sha256": "75456877dc7ef75576c78aa893d207cf5450642ff6eb4694e34c0a7e28bd4c51"
+  },
+  {
+    "name": "gemma_7b-instruct-q5_1",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:a336d3ff4a99cc8ec59876d811757a36b61f90799a272da9d9da5ea338bc51f4"
+    ],
+    "sha256": "a336d3ff4a99cc8ec59876d811757a36b61f90799a272da9d9da5ea338bc51f4"
+  },
+  {
+    "name": "gemma_7b-instruct-q8_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:91f092aa54e2472e66085030edd77d038df72ceaefae7bbf7de1ff3262eb6625"
+    ],
+    "sha256": "91f092aa54e2472e66085030edd77d038df72ceaefae7bbf7de1ff3262eb6625"
+  },
+  {
+    "name": "gemma_7b-instruct-q2_K",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:3bf9fc3949f84cc7ad3041ab38d7edeafc539e0c5ae1c58eccb2c37b21bbf14c"
+    ],
+    "sha256": "3bf9fc3949f84cc7ad3041ab38d7edeafc539e0c5ae1c58eccb2c37b21bbf14c"
+  },
+  {
+    "name": "gemma_7b-instruct-q3_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:3499d462b8fbadf09df59240c94302cd9ae19875830f4b944bb7e7eee890743d"
+    ],
+    "sha256": "3499d462b8fbadf09df59240c94302cd9ae19875830f4b944bb7e7eee890743d"
+  },
+  {
+    "name": "gemma_7b-instruct-q3_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:bc1362d999cfa7eecf7edd124cb25c795739fc2c4b8dda3e25d4369e7c7b36e5"
+    ],
+    "sha256": "bc1362d999cfa7eecf7edd124cb25c795739fc2c4b8dda3e25d4369e7c7b36e5"
+  },
+  {
+    "name": "gemma_7b-instruct-q3_K_L",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:86c3b75bbe6f0f8821c82a3018b9f569e6cda79359260bed826b6b468238deff"
+    ],
+    "sha256": "86c3b75bbe6f0f8821c82a3018b9f569e6cda79359260bed826b6b468238deff"
+  },
+  {
+    "name": "gemma_7b-instruct-q4_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:fd92ece45064e89042d3d664a3b9eb9cababd0f3e423b2d87b143e7bb9e6c611"
+    ],
+    "sha256": "fd92ece45064e89042d3d664a3b9eb9cababd0f3e423b2d87b143e7bb9e6c611"
+  },
+  {
+    "name": "gemma_7b-instruct-q4_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:8ffdab89967ed5a47047943fecda896d0f0a8921118a9529fa8259b2d77d2a00"
+    ],
+    "sha256": "8ffdab89967ed5a47047943fecda896d0f0a8921118a9529fa8259b2d77d2a00"
+  },
+  {
+    "name": "gemma_7b-instruct-q5_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:8db62cc87890da3a61436b1b9bd45e265073bef4e4bf40d895fe1c419ad2707a"
+    ],
+    "sha256": "8db62cc87890da3a61436b1b9bd45e265073bef4e4bf40d895fe1c419ad2707a"
+  },
+  {
+    "name": "gemma_7b-instruct-q5_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:e8ed2a95b50614a9c2e7b5e866918133d46a3db3a72c23db259cf272431a5d06"
+    ],
+    "sha256": "e8ed2a95b50614a9c2e7b5e866918133d46a3db3a72c23db259cf272431a5d06"
+  },
+  {
+    "name": "gemma_7b-instruct-q6_K",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:d8202e1eeb61ed998c1a007ad4377f4b1dc768e94a801270d501cc9445cfb320"
+    ],
+    "sha256": "d8202e1eeb61ed998c1a007ad4377f4b1dc768e94a801270d501cc9445cfb320"
+  },
+  {
+    "name": "gemma_7b-instruct-fp16",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:d19e52732bddcb9902347a9c60c117801ad7a3b776b700b9d1649f63f6d80dc0"
+    ],
+    "sha256": "d19e52732bddcb9902347a9c60c117801ad7a3b776b700b9d1649f63f6d80dc0"
+  },
+  {
+    "name": "gemma_7b-text-q4_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:df18cdedaff1b11064352ce43a1a3dec8b69af8191b901b3469998e39d4d643a"
+    ],
+    "sha256": "df18cdedaff1b11064352ce43a1a3dec8b69af8191b901b3469998e39d4d643a"
+  },
+  {
+    "name": "gemma_7b-text-q4_1",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:14a54484ce2376363ccc1cc3a7b9a24edaf1c0d961341652ca6be564898932cb"
+    ],
+    "sha256": "14a54484ce2376363ccc1cc3a7b9a24edaf1c0d961341652ca6be564898932cb"
+  },
+  {
+    "name": "gemma_7b-text-q5_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:2a34de3a10871a39f1fa8fe97eeff0ff8dfc747543fa4d7a6d6b5b419b1f47e8"
+    ],
+    "sha256": "2a34de3a10871a39f1fa8fe97eeff0ff8dfc747543fa4d7a6d6b5b419b1f47e8"
+  },
+  {
+    "name": "gemma_7b-text-q5_1",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:341ae0bf91924414a8ca483bb3867f790577db746fe880bd2fbf896c0f01b5b9"
+    ],
+    "sha256": "341ae0bf91924414a8ca483bb3867f790577db746fe880bd2fbf896c0f01b5b9"
+  },
+  {
+    "name": "gemma_7b-text-q8_0",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:7f72310ab83b94033356b9491f37b0a0036a16c47a65307439862cdbb3462aa5"
+    ],
+    "sha256": "7f72310ab83b94033356b9491f37b0a0036a16c47a65307439862cdbb3462aa5"
+  },
+  {
+    "name": "gemma_7b-text-q2_K",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:8b8fe7fb8ae71c3f19a7c5a65597bcd99fbc178608dc3b28ccf5c6de575be145"
+    ],
+    "sha256": "8b8fe7fb8ae71c3f19a7c5a65597bcd99fbc178608dc3b28ccf5c6de575be145"
+  },
+  {
+    "name": "gemma_7b-text-q3_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:f9b0200a06a0fdab1674e011749cd241b356802f6bd72fe4779a317e7bba94d8"
+    ],
+    "sha256": "f9b0200a06a0fdab1674e011749cd241b356802f6bd72fe4779a317e7bba94d8"
+  },
+  {
+    "name": "gemma_7b-text-q3_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:e8448e4646e3929637586dee6f3cf212b049ebefef572f07ff64e9aa1112ff01"
+    ],
+    "sha256": "e8448e4646e3929637586dee6f3cf212b049ebefef572f07ff64e9aa1112ff01"
+  },
+  {
+    "name": "gemma_7b-text-q3_K_L",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:a9f8aac486890d6741d90870a21b9253323f7f19410a75c4ce344fcafe96d91d"
+    ],
+    "sha256": "a9f8aac486890d6741d90870a21b9253323f7f19410a75c4ce344fcafe96d91d"
+  },
+  {
+    "name": "gemma_7b-text-q4_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:66e0e9ba1f5870a447048d6612efd523c0dc89675758272e3717a6a72fcdc3a4"
+    ],
+    "sha256": "66e0e9ba1f5870a447048d6612efd523c0dc89675758272e3717a6a72fcdc3a4"
+  },
+  {
+    "name": "gemma_7b-text-q4_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:5b59d98848be2ab13edd13d45f6735ca5fca7a05238b952c90dd4b75021426e4"
+    ],
+    "sha256": "5b59d98848be2ab13edd13d45f6735ca5fca7a05238b952c90dd4b75021426e4"
+  },
+  {
+    "name": "gemma_7b-text-q5_K_S",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:9e537e62c2d6d2c039e2a414b9c9e2efc3710daa799d625be9cfa40cb2932f6b"
+    ],
+    "sha256": "9e537e62c2d6d2c039e2a414b9c9e2efc3710daa799d625be9cfa40cb2932f6b"
+  },
+  {
+    "name": "gemma_7b-text-q5_K_M",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:d4701252d65cff013f5f5c7d3564d2d3e6f7f26b22af377d8346659b6c232be8"
+    ],
+    "sha256": "d4701252d65cff013f5f5c7d3564d2d3e6f7f26b22af377d8346659b6c232be8"
+  },
+  {
+    "name": "gemma_7b-text-q6_K",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:ab4b41fc9c57853150eb331fa798dbd3c6d11f56ca047922aee29d6844677df0"
+    ],
+    "sha256": "ab4b41fc9c57853150eb331fa798dbd3c6d11f56ca047922aee29d6844677df0"
+  },
+  {
+    "name": "gemma_7b-text-fp16",
+    "provider_url": "https://ollama.com/library/gemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:f21d81d28660d9da420691ce9b1cb8b0ba8604b79e662d0d9cf7367e588a85df"
+    ],
+    "sha256": "f21d81d28660d9da420691ce9b1cb8b0ba8604b79e662d0d9cf7367e588a85df"
   }
 ]
