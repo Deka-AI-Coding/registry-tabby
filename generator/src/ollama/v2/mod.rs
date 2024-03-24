@@ -59,7 +59,7 @@ pub async fn parse_model(name: &str, tag: &str) -> Result<Model> {
     };
 
     Ok(Model {
-        name: format!("{}_{}", name, tag),
+        name: format!("{}:{}", name, tag),
         license_url,
         provider_url: get_provider_url(name),
         sha256: checksum,
