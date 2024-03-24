@@ -29,11 +29,12 @@ Example:
 
 ## Current models
 
-| Name                         | Chat? | Completion? |
-|------------------------------|-------|-------------|
-| starcoder                    | No    | Yes         |
-| starcoder2                   | No    | Yes         |
-| deepseek-coder               | Yes   | Yes         |
-| gemma                        | Yes   | No          |
-| mistral                      | Yes   | No          |
-| wizardcoder                  | Yes   | No          |
+| Name                         | Chat? | Completion? | Comments                                                          |
+|------------------------------|-------|-------------|-------------------------------------------------------------------|
+| starcoder                    | No    | Yes         |                                                                   |
+| starcoder2                   | No    | Yes         |                                                                   |
+| deepseek-coder               | Yes   | Yes         |                                                                   |
+| gemma                        | Yes   | No          |                                                                   |
+| mistral                      | Yes   | No          |                                                                   |
+| wizardcoder                  | Yes   | No          |                                                                   |
+| codellama                    | Yes   | Yes         | Prefer `code` tags for completion, `instruct` for chat            |
