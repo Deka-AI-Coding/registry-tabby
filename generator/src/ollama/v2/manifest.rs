@@ -14,6 +14,8 @@ pub enum LayerMediaType {
     Params,
     #[serde(rename = "application/vnd.ollama.image.system")]
     System,
+    #[serde(rename = "application/vnd.docker.container.image.v1+json")]
+    DockerImageV1,
 }
 
 #[derive(Deserialize, Debug)]
