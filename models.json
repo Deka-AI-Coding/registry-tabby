@@ -1000,6 +1000,496 @@
     "sha256": "0a0c1c3a3090b31b9a18b14f2234f9f8153b4c523b557dc7b6e84459d91d5576"
   },
   {
+    "name": "starcoder2:latest",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:28bfdfaeba9f51611c00ed322ba684ce6db076756dbc46643f98a8a748c5199e"
+    ],
+    "sha256": "28bfdfaeba9f51611c00ed322ba684ce6db076756dbc46643f98a8a748c5199e"
+  },
+  {
+    "name": "starcoder2:3b",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:28bfdfaeba9f51611c00ed322ba684ce6db076756dbc46643f98a8a748c5199e"
+    ],
+    "sha256": "28bfdfaeba9f51611c00ed322ba684ce6db076756dbc46643f98a8a748c5199e"
+  },
+  {
+    "name": "starcoder2:7b",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:cf866ccad4e444eb559c9389867d3b67cf1dc93d79e9cc976049367ce3519adb"
+    ],
+    "sha256": "cf866ccad4e444eb559c9389867d3b67cf1dc93d79e9cc976049367ce3519adb"
+  },
+  {
+    "name": "starcoder2:15b",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:dc5deb763c383b81460256a0ac7e40b320c3b01632727ea407e386002588d417"
+    ],
+    "sha256": "dc5deb763c383b81460256a0ac7e40b320c3b01632727ea407e386002588d417"
+  },
+  {
+    "name": "starcoder2:3b-q4_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:28bfdfaeba9f51611c00ed322ba684ce6db076756dbc46643f98a8a748c5199e"
+    ],
+    "sha256": "28bfdfaeba9f51611c00ed322ba684ce6db076756dbc46643f98a8a748c5199e"
+  },
+  {
+    "name": "starcoder2:3b-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:9af35f1e30948015276cbf1e30901a9347df9e3030ecd80546e052798a9243e6"
+    ],
+    "sha256": "9af35f1e30948015276cbf1e30901a9347df9e3030ecd80546e052798a9243e6"
+  },
+  {
+    "name": "starcoder2:3b-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:b302764e5f6c8ac6738ccb9672b3f6182967349b1a46b691ac42846fc94f9174"
+    ],
+    "sha256": "b302764e5f6c8ac6738ccb9672b3f6182967349b1a46b691ac42846fc94f9174"
+  },
+  {
+    "name": "starcoder2:3b-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:df184d365f3600624ce638afda4c79c9deec711faa32b29ece77f457a4610a3e"
+    ],
+    "sha256": "df184d365f3600624ce638afda4c79c9deec711faa32b29ece77f457a4610a3e"
+  },
+  {
+    "name": "starcoder2:3b-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:b4cbf961fa378b1a9f86d5930d3fcb0c31bacfd3ad64fcd27aca680b10059ff8"
+    ],
+    "sha256": "b4cbf961fa378b1a9f86d5930d3fcb0c31bacfd3ad64fcd27aca680b10059ff8"
+  },
+  {
+    "name": "starcoder2:3b-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:e0232966e9947edd0b684c2ec6cfe71c607ed97a4d3130fc8ae6395d13244724"
+    ],
+    "sha256": "e0232966e9947edd0b684c2ec6cfe71c607ed97a4d3130fc8ae6395d13244724"
+  },
+  {
+    "name": "starcoder2:3b-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:14fe2f1894b63820ec49510bc6ad77e083cd781dc916db39c2cd44528d276749"
+    ],
+    "sha256": "14fe2f1894b63820ec49510bc6ad77e083cd781dc916db39c2cd44528d276749"
+  },
+  {
+    "name": "starcoder2:3b-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:43eb2bbab6b256de7baea7295f43bd8e71697f905078c908bb17d8caa0f77851"
+    ],
+    "sha256": "43eb2bbab6b256de7baea7295f43bd8e71697f905078c908bb17d8caa0f77851"
+  },
+  {
+    "name": "starcoder2:3b-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:99d81f19c34040fc66bb78cc02ce07dc805cc76d801977680000ae3832f923fb"
+    ],
+    "sha256": "99d81f19c34040fc66bb78cc02ce07dc805cc76d801977680000ae3832f923fb"
+  },
+  {
+    "name": "starcoder2:3b-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:6d4a313f5477f1cf722fc616d0b2aae99d03a537a0805cb186dd14536b9dbf83"
+    ],
+    "sha256": "6d4a313f5477f1cf722fc616d0b2aae99d03a537a0805cb186dd14536b9dbf83"
+  },
+  {
+    "name": "starcoder2:3b-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:ee27080ee2f564c2831efaf1532b1a112897eb2305f3e1a812e3a76db8c08c59"
+    ],
+    "sha256": "ee27080ee2f564c2831efaf1532b1a112897eb2305f3e1a812e3a76db8c08c59"
+  },
+  {
+    "name": "starcoder2:3b-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:c9e6545fb5350be0c6f94297312b0c19bb0fcfab66b43208e3c691dc591973cc"
+    ],
+    "sha256": "c9e6545fb5350be0c6f94297312b0c19bb0fcfab66b43208e3c691dc591973cc"
+  },
+  {
+    "name": "starcoder2:3b-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:404954ef8a94bb3c729fc5bac2a1e9e8b81860213143b1be45f3fab60a6e7fc5"
+    ],
+    "sha256": "404954ef8a94bb3c729fc5bac2a1e9e8b81860213143b1be45f3fab60a6e7fc5"
+  },
+  {
+    "name": "starcoder2:3b-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:d3febc639813755b6a9ae9e1abe88e8d019344ab9b4213fda424eb30724b3471"
+    ],
+    "sha256": "d3febc639813755b6a9ae9e1abe88e8d019344ab9b4213fda424eb30724b3471"
+  },
+  {
+    "name": "starcoder2:3b-fp16",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:ce8bf120c0f8cc7c1c99a8e273916d1cac853a8635c4730b526764a814d957cf"
+    ],
+    "sha256": "ce8bf120c0f8cc7c1c99a8e273916d1cac853a8635c4730b526764a814d957cf"
+  },
+  {
+    "name": "starcoder2:7b-q4_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:cf866ccad4e444eb559c9389867d3b67cf1dc93d79e9cc976049367ce3519adb"
+    ],
+    "sha256": "cf866ccad4e444eb559c9389867d3b67cf1dc93d79e9cc976049367ce3519adb"
+  },
+  {
+    "name": "starcoder2:7b-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:967c98bf76278409f6f7d8a853f8a3e0efa2e3169f1f6e6b0ed47ded5154dd32"
+    ],
+    "sha256": "967c98bf76278409f6f7d8a853f8a3e0efa2e3169f1f6e6b0ed47ded5154dd32"
+  },
+  {
+    "name": "starcoder2:7b-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:3b6647d47b67ce8e8496fe7426d193e7caf6c969e9621cfcb4ff679a49b489ff"
+    ],
+    "sha256": "3b6647d47b67ce8e8496fe7426d193e7caf6c969e9621cfcb4ff679a49b489ff"
+  },
+  {
+    "name": "starcoder2:7b-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:309caa1eb565b98efaea9ed5a7a1fe3d25bb6f6f6389c184f5d422c01de05e7d"
+    ],
+    "sha256": "309caa1eb565b98efaea9ed5a7a1fe3d25bb6f6f6389c184f5d422c01de05e7d"
+  },
+  {
+    "name": "starcoder2:7b-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:48b4842e14dc891e2abd7165ad36297cb45b702db0f98325f83fb0a94fd68dd8"
+    ],
+    "sha256": "48b4842e14dc891e2abd7165ad36297cb45b702db0f98325f83fb0a94fd68dd8"
+  },
+  {
+    "name": "starcoder2:7b-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:7652ee1705f2cc988e09d96520178d2cd8b00235d293b0fd71996c7674951c77"
+    ],
+    "sha256": "7652ee1705f2cc988e09d96520178d2cd8b00235d293b0fd71996c7674951c77"
+  },
+  {
+    "name": "starcoder2:7b-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:e236f172318cbc9481c4788c1d94e6d6eb0eecb96f552647e4a7bbb1109d7780"
+    ],
+    "sha256": "e236f172318cbc9481c4788c1d94e6d6eb0eecb96f552647e4a7bbb1109d7780"
+  },
+  {
+    "name": "starcoder2:7b-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:46c362ee0057a3a4308fd2e0fe628c67b38e888e85503f30bca92ed84a468d8e"
+    ],
+    "sha256": "46c362ee0057a3a4308fd2e0fe628c67b38e888e85503f30bca92ed84a468d8e"
+  },
+  {
+    "name": "starcoder2:7b-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:b0f5a49624485a0c8b67d2fb1d06be541fcb892ee39547ce20f7a96e46dafc54"
+    ],
+    "sha256": "b0f5a49624485a0c8b67d2fb1d06be541fcb892ee39547ce20f7a96e46dafc54"
+  },
+  {
+    "name": "starcoder2:7b-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:117cb2b9132045f24a4d71fe978d10af40b3eb3766934975899cc938e845b2bb"
+    ],
+    "sha256": "117cb2b9132045f24a4d71fe978d10af40b3eb3766934975899cc938e845b2bb"
+  },
+  {
+    "name": "starcoder2:7b-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:d4d2d88fe396f2839f710baa4c216f98c63506a1d0909951eb8053f8b7612a6a"
+    ],
+    "sha256": "d4d2d88fe396f2839f710baa4c216f98c63506a1d0909951eb8053f8b7612a6a"
+  },
+  {
+    "name": "starcoder2:7b-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:1b064c554ec05e1086cc3825f51e5b2d0d391a391f2547a5f1b18fbded9fe742"
+    ],
+    "sha256": "1b064c554ec05e1086cc3825f51e5b2d0d391a391f2547a5f1b18fbded9fe742"
+  },
+  {
+    "name": "starcoder2:7b-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:cd258f6a2eaa6d29c4a3edba9cd14bf9ee1730391dacaf9c899dd5679c624fbb"
+    ],
+    "sha256": "cd258f6a2eaa6d29c4a3edba9cd14bf9ee1730391dacaf9c899dd5679c624fbb"
+  },
+  {
+    "name": "starcoder2:7b-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:bca7db9a62d6cd7aa4ae480ede45d13ce52a6702e12067294a6769f2f12e7c52"
+    ],
+    "sha256": "bca7db9a62d6cd7aa4ae480ede45d13ce52a6702e12067294a6769f2f12e7c52"
+  },
+  {
+    "name": "starcoder2:7b-fp16",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:9287402c3c5d8c5b9cd26b69f2f5c52e56ea5d1ab2d82a1419e39d716718ee71"
+    ],
+    "sha256": "9287402c3c5d8c5b9cd26b69f2f5c52e56ea5d1ab2d82a1419e39d716718ee71"
+  },
+  {
+    "name": "starcoder2:15b-q4_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:dc5deb763c383b81460256a0ac7e40b320c3b01632727ea407e386002588d417"
+    ],
+    "sha256": "dc5deb763c383b81460256a0ac7e40b320c3b01632727ea407e386002588d417"
+  },
+  {
+    "name": "starcoder2:15b-q4_1",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:9aa0bb20cb47d30e0be788d947540645a07233900d16ed2fba9cf4e39c58331d"
+    ],
+    "sha256": "9aa0bb20cb47d30e0be788d947540645a07233900d16ed2fba9cf4e39c58331d"
+  },
+  {
+    "name": "starcoder2:15b-q5_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:420e75d7612ef3ed52ceaa51aefdd0e7f17d43c041a969f359113d0f773d599f"
+    ],
+    "sha256": "420e75d7612ef3ed52ceaa51aefdd0e7f17d43c041a969f359113d0f773d599f"
+  },
+  {
+    "name": "starcoder2:15b-q5_1",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:c22c0fd07af700306c02593b459d8ebc91b6c8c3ad63938a73e4f96adfd40711"
+    ],
+    "sha256": "c22c0fd07af700306c02593b459d8ebc91b6c8c3ad63938a73e4f96adfd40711"
+  },
+  {
+    "name": "starcoder2:15b-q8_0",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:6cfe972755f7924cf8c176cb8607027f105196b8abb7614a2f680e84171cb418"
+    ],
+    "sha256": "6cfe972755f7924cf8c176cb8607027f105196b8abb7614a2f680e84171cb418"
+  },
+  {
+    "name": "starcoder2:15b-q2_K",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:a5cc9aab2d6660117f2f488ff187c2db7b8cd14d3b9aaa6074bcbc192312fdad"
+    ],
+    "sha256": "a5cc9aab2d6660117f2f488ff187c2db7b8cd14d3b9aaa6074bcbc192312fdad"
+  },
+  {
+    "name": "starcoder2:15b-q3_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:cdaf0bd5422be2c12d983c2c57642c4574167e272fa9624e047918b72e8d024b"
+    ],
+    "sha256": "cdaf0bd5422be2c12d983c2c57642c4574167e272fa9624e047918b72e8d024b"
+  },
+  {
+    "name": "starcoder2:15b-q3_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:a21c0f6bc9e64934df5bd9c92fa90598c83184863ad9cf2ee64d4fdf0ce44304"
+    ],
+    "sha256": "a21c0f6bc9e64934df5bd9c92fa90598c83184863ad9cf2ee64d4fdf0ce44304"
+  },
+  {
+    "name": "starcoder2:15b-q3_K_L",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:121f312675c94cb81929616b579fe8a11cc412393a2d3d603f399ee9c84a7970"
+    ],
+    "sha256": "121f312675c94cb81929616b579fe8a11cc412393a2d3d603f399ee9c84a7970"
+  },
+  {
+    "name": "starcoder2:15b-q4_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:8b90a40f05fa26da6de131e48829064bf5155c4c4294fee8e95798c31cf64cbc"
+    ],
+    "sha256": "8b90a40f05fa26da6de131e48829064bf5155c4c4294fee8e95798c31cf64cbc"
+  },
+  {
+    "name": "starcoder2:15b-q4_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:e5bc93e4d1718febec7f7cce4183e681f314ae11d48c5202d77c2ce3bc015bcb"
+    ],
+    "sha256": "e5bc93e4d1718febec7f7cce4183e681f314ae11d48c5202d77c2ce3bc015bcb"
+  },
+  {
+    "name": "starcoder2:15b-q5_K_S",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:5750cd8658f99147b3d1d7374908a169353e069024ed1af42be678ec73c74f1b"
+    ],
+    "sha256": "5750cd8658f99147b3d1d7374908a169353e069024ed1af42be678ec73c74f1b"
+  },
+  {
+    "name": "starcoder2:15b-q5_K_M",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:1770a45348831b9522677e73ac59902ed86fdd4e422818b14bd915d63f18d345"
+    ],
+    "sha256": "1770a45348831b9522677e73ac59902ed86fdd4e422818b14bd915d63f18d345"
+  },
+  {
+    "name": "starcoder2:15b-q6_K",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:11cad0886032bcef598ca22f2bf0a3cbe4af37b828c7b0407eb78e8b06f25296"
+    ],
+    "sha256": "11cad0886032bcef598ca22f2bf0a3cbe4af37b828c7b0407eb78e8b06f25296"
+  },
+  {
+    "name": "starcoder2:15b-fp16",
+    "provider_url": "https://ollama.com/library/starcoder2",
+    "license_url": "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:4ec42cd966c9d5cf067cc4438869e0737679203b4d6fc551c226c15a1c2d7997",
+    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/starcoder2/blobs/sha256:dde7c68d1581de990431e52de59526ad12bf957ed53003cea11a9645b9edaf7b"
+    ],
+    "sha256": "dde7c68d1581de990431e52de59526ad12bf957ed53003cea11a9645b9edaf7b"
+  },
+  {
     "name": "deepseek-coder:latest",
     "provider_url": "https://ollama.com/library/deepseek-coder",
     "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",

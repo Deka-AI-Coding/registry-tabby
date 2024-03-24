@@ -32,6 +32,7 @@ Example:
 | Name                         | Chat? | Completion? |
 |------------------------------|-------|-------------|
 | starcoder                    | No    | Yes         |
+| starcoder2                   | No    | Yes         |
 | deepseek-coder               | Yes   | Yes         |
 | gemma                        | Yes   | No          |
 | mistral                      | Yes   | No          |
