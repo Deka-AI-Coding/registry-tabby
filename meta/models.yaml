@@ -412,6 +412,45 @@
     - 7b-text-v0.2-q6_K
     - 7b-text-v0.2-fp16
 
+- name: mixtral
+  chat_template: "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
+
+  tags:
+    - latest
+    - 8x7b
+    - text
+    - instruct
+    - 8x7b-instruct-v0.1-q4_0
+    - 8x7b-instruct-v0.1-q4_1
+    - 8x7b-instruct-v0.1-q5_0
+    - 8x7b-instruct-v0.1-q5_1
+    - 8x7b-instruct-v0.1-q8_0
+    - 8x7b-instruct-v0.1-q2_K
+    - 8x7b-instruct-v0.1-q3_K_S
+    - 8x7b-instruct-v0.1-q3_K_M
+    - 8x7b-instruct-v0.1-q3_K_L
+    - 8x7b-instruct-v0.1-q4_K_S
+    - 8x7b-instruct-v0.1-q4_K_M
+    - 8x7b-instruct-v0.1-q5_K_S
+    - 8x7b-instruct-v0.1-q5_K_M
+    - 8x7b-instruct-v0.1-q6_K
+    - 8x7b-instruct-v0.1-fp16
+    - 8x7b-text-v0.1-q4_0
+    - 8x7b-text-v0.1-q4_1
+    - 8x7b-text-v0.1-q5_0
+    - 8x7b-text-v0.1-q5_1
+    - 8x7b-text-v0.1-q8_0
+    - 8x7b-text-v0.1-q2_K
+    - 8x7b-text-v0.1-q3_K_S
+    - 8x7b-text-v0.1-q3_K_M
+    - 8x7b-text-v0.1-q3_K_L
+    - 8x7b-text-v0.1-q4_K_S
+    - 8x7b-text-v0.1-q4_K_M
+    - 8x7b-text-v0.1-q5_K_S
+    - 8x7b-text-v0.1-q5_K_M
+    - 8x7b-text-v0.1-q6_K
+    - 8x7b-text-v0.1-fp16
+
 - name: wizardcoder
   chat_template: "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
 

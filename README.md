@@ -36,5 +36,6 @@ Example:
 | deepseek-coder               | Yes   | Yes         |                                                                   |
 | gemma                        | Yes   | No          |                                                                   |
 | mistral                      | Yes   | No          |                                                                   |
+| mixtral                      | Yes   | No          |                                                                   |
 | wizardcoder                  | Yes   | No          |                                                                   |
 | codellama                    | Yes   | Yes         | Prefer `code` tags for completion, `instruct` for chat            |
