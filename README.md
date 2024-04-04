@@ -39,3 +39,7 @@ Example:
 | mixtral                      | Yes   | No          |                                                                   |
 | wizardcoder                  | Yes   | No          |                                                                   |
 | codellama                    | Yes   | Yes         | Prefer `code` tags for completion, `instruct` for chat            |
+| openhermes                   | Yes   | No          |                                                                   |
+| nous-hermes2                 | Yes   | No          |                                                                   |
+| nous-hermes2-mixtral         | Yes   | No          |                                                                   |
+
