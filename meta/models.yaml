@@ -263,8 +263,6 @@
     - 33b-instruct-q6_K
     - 33b-instruct-fp16
 
-
-
 - name: gemma
   chat_template: "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
 
@@ -338,6 +336,66 @@
     - 7b-text-q5_K_M
     - 7b-text-q6_K
     - 7b-text-fp16
+
+- name: codegemma
+  chat_template: "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
+  prompt_template: "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>"
+
+  tags:
+    - latest
+    - 7b
+    - 2b
+    - instruct
+    - code
+    - 2b-code
+    - 7b-code
+    - 7b-instruct
+    - 2b-code-q4_0
+    - 2b-code-q4_1
+    - 2b-code-q5_0
+    - 2b-code-q5_1
+    - 2b-code-q8_0
+    - 2b-code-q2_K
+    - 2b-code-q3_K_S
+    - 2b-code-q3_K_M
+    - 2b-code-q3_K_L
+    - 2b-code-q4_K_S
+    - 2b-code-q4_K_M
+    - 2b-code-q5_K_S
+    - 2b-code-q5_K_M
+    - 2b-code-q6_K
+    - 2b-code-fp16
+    - 7b-code-q4_0
+    - 7b-code-q4_1
+    - 7b-code-q5_0
+    - 7b-code-q5_1
+    - 7b-code-q8_0
+    - 7b-code-q2_K
+    - 7b-code-q3_K_S
+    - 7b-code-q3_K_M
+    - 7b-code-q3_K_L
+    - 7b-code-q4_K_S
+    - 7b-code-q4_K_M
+    - 7b-code-q5_K_S
+    - 7b-code-q5_K_M
+    - 7b-code-q6_K
+    - 7b-code-fp16
+    - 7b-instruct-q4_0
+    - 7b-instruct-q4_1
+    - 7b-instruct-q5_0
+    - 7b-instruct-q5_1
+    - 7b-instruct-q8_0
+    - 7b-instruct-q2_K
+    - 7b-instruct-q3_K_S
+    - 7b-instruct-q3_K_M
+    - 7b-instruct-q3_K_L
+    - 7b-instruct-q4_K_S
+    - 7b-instruct-q4_K_M
+    - 7b-instruct-q5_K_S
+    - 7b-instruct-q5_K_M
+    - 7b-instruct-q6_K
+    - 7b-instruct-fp16
+
 
 - name: mistral
   chat_template: "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"

@@ -35,6 +35,7 @@ Example:
 | starcoder2                   | No    | Yes         |                                                                   |
 | deepseek-coder               | Yes   | Yes         |                                                                   |
 | gemma                        | Yes   | No          |                                                                   |
+| codegemma                    | Yes   | Yes         |                                                                   |
 | mistral                      | Yes   | No          |                                                                   |
 | mixtral                      | Yes   | No          |                                                                   |
 | wizardcoder                  | Yes   | No          |                                                                   |

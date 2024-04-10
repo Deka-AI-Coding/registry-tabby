@@ -2617,9 +2617,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
     "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77"
     ],
-    "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+    "sha256": "ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77"
   },
   {
     "name": "gemma:2b",
@@ -2637,9 +2637,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
     "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77"
     ],
-    "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+    "sha256": "ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77"
   },
   {
     "name": "gemma:instruct",
@@ -2647,9 +2647,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
     "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77"
     ],
-    "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+    "sha256": "ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77"
   },
   {
     "name": "gemma:text",
@@ -2667,9 +2667,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
     "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12"
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:b73d1bc8e1cd063d614bb1134d493cf56900f4a95fd5bc841849f4213e0fe529"
     ],
-    "sha256": "c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12"
+    "sha256": "b73d1bc8e1cd063d614bb1134d493cf56900f4a95fd5bc841849f4213e0fe529"
   },
   {
     "name": "gemma:2b-text",
@@ -2687,9 +2687,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
     "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+      "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77"
     ],
-    "sha256": "456402914e838a953e0cf80caa6adbe75383d9e63584a964f504a7bbb8f7aad9"
+    "sha256": "ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77"
   },
   {
     "name": "gemma:7b-text",
@@ -3300,6 +3300,589 @@
       "https://registry.ollama.ai:443/v2/library/gemma/blobs/sha256:f21d81d28660d9da420691ce9b1cb8b0ba8604b79e662d0d9cf7367e588a85df"
     ],
     "sha256": "f21d81d28660d9da420691ce9b1cb8b0ba8604b79e662d0d9cf7367e588a85df"
+  },
+  {
+    "name": "codegemma:latest",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    ],
+    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+  },
+  {
+    "name": "codegemma:7b",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    ],
+    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+  },
+  {
+    "name": "codegemma:2b",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:acb6ca42cddd6423faa8be264a5663e3b5721f2b2eeca16fb02604e2553299c2"
+    ],
+    "sha256": "acb6ca42cddd6423faa8be264a5663e3b5721f2b2eeca16fb02604e2553299c2"
+  },
+  {
+    "name": "codegemma:instruct",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    ],
+    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+  },
+  {
+    "name": "codegemma:code",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:acb6ca42cddd6423faa8be264a5663e3b5721f2b2eeca16fb02604e2553299c2"
+    ],
+    "sha256": "acb6ca42cddd6423faa8be264a5663e3b5721f2b2eeca16fb02604e2553299c2"
+  },
+  {
+    "name": "codegemma:2b-code",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:acb6ca42cddd6423faa8be264a5663e3b5721f2b2eeca16fb02604e2553299c2"
+    ],
+    "sha256": "acb6ca42cddd6423faa8be264a5663e3b5721f2b2eeca16fb02604e2553299c2"
+  },
+  {
+    "name": "codegemma:7b-code",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:f56cab8eb0388de3b6f22ab3546146c5166e8c368b34e64124901fdbb37feb42"
+    ],
+    "sha256": "f56cab8eb0388de3b6f22ab3546146c5166e8c368b34e64124901fdbb37feb42"
+  },
+  {
+    "name": "codegemma:7b-instruct",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    ],
+    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+  },
+  {
+    "name": "codegemma:2b-code-q4_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:acb6ca42cddd6423faa8be264a5663e3b5721f2b2eeca16fb02604e2553299c2"
+    ],
+    "sha256": "acb6ca42cddd6423faa8be264a5663e3b5721f2b2eeca16fb02604e2553299c2"
+  },
+  {
+    "name": "codegemma:2b-code-q4_1",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:f06486e05b28460afe08cd034f23681bcd51dc17548b38ea8a79f0f234331f46"
+    ],
+    "sha256": "f06486e05b28460afe08cd034f23681bcd51dc17548b38ea8a79f0f234331f46"
+  },
+  {
+    "name": "codegemma:2b-code-q5_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:4ad8a019593b70359046b819d96047095d80c6aa352130d63c21ed621f33bf22"
+    ],
+    "sha256": "4ad8a019593b70359046b819d96047095d80c6aa352130d63c21ed621f33bf22"
+  },
+  {
+    "name": "codegemma:2b-code-q5_1",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:c856f339017541b851207e126514ba2241a302c21ba297712eed9a60a6719be3"
+    ],
+    "sha256": "c856f339017541b851207e126514ba2241a302c21ba297712eed9a60a6719be3"
+  },
+  {
+    "name": "codegemma:2b-code-q8_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:b2afa04a0561c7269016e4d5c0e0f80c2b09b2c166d999ada2b1956c30aaf621"
+    ],
+    "sha256": "b2afa04a0561c7269016e4d5c0e0f80c2b09b2c166d999ada2b1956c30aaf621"
+  },
+  {
+    "name": "codegemma:2b-code-q2_K",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:320e105fbc1f067067b394e67ada8593c43e8374bedce485ec70d11caacc935d"
+    ],
+    "sha256": "320e105fbc1f067067b394e67ada8593c43e8374bedce485ec70d11caacc935d"
+  },
+  {
+    "name": "codegemma:2b-code-q3_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:ef555b2aec41878de7e1fd407bb6c5f2d2f3019e307333570beac596d1f0db11"
+    ],
+    "sha256": "ef555b2aec41878de7e1fd407bb6c5f2d2f3019e307333570beac596d1f0db11"
+  },
+  {
+    "name": "codegemma:2b-code-q3_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:d0440a564063dc2187e1039407b189fc8be1ebecdcdc859388af44db5756e5ab"
+    ],
+    "sha256": "d0440a564063dc2187e1039407b189fc8be1ebecdcdc859388af44db5756e5ab"
+  },
+  {
+    "name": "codegemma:2b-code-q3_K_L",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:d15b577387f3f78d3044ada3cb7024325147f2a30c199a577d3da74f96d3f6ca"
+    ],
+    "sha256": "d15b577387f3f78d3044ada3cb7024325147f2a30c199a577d3da74f96d3f6ca"
+  },
+  {
+    "name": "codegemma:2b-code-q4_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:23497f95adafe0927f2fc541fb229aacb6242dcc4e6fe0091e60a1d87b2effce"
+    ],
+    "sha256": "23497f95adafe0927f2fc541fb229aacb6242dcc4e6fe0091e60a1d87b2effce"
+  },
+  {
+    "name": "codegemma:2b-code-q4_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:8e14d815f5e53420b98757d12e7bb62c44cc9d4fef98f585285b935a0ff1f595"
+    ],
+    "sha256": "8e14d815f5e53420b98757d12e7bb62c44cc9d4fef98f585285b935a0ff1f595"
+  },
+  {
+    "name": "codegemma:2b-code-q5_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:601cc488a57ea0efc6d780e3d97ad15080243db5a6153cc6e87071fab02243d1"
+    ],
+    "sha256": "601cc488a57ea0efc6d780e3d97ad15080243db5a6153cc6e87071fab02243d1"
+  },
+  {
+    "name": "codegemma:2b-code-q5_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:58c4057efff823954b150eb551fa6459a6939f7185ed409b748900559fc8ba45"
+    ],
+    "sha256": "58c4057efff823954b150eb551fa6459a6939f7185ed409b748900559fc8ba45"
+  },
+  {
+    "name": "codegemma:2b-code-q6_K",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:1d78c305bb4b886a8430cb1fc255c5e2e34e24f1eff2d21632af7a333193732c"
+    ],
+    "sha256": "1d78c305bb4b886a8430cb1fc255c5e2e34e24f1eff2d21632af7a333193732c"
+  },
+  {
+    "name": "codegemma:2b-code-fp16",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:6f9505d88886834a131c1e06bddadccfe7f53759ea0d0c5fed4ed3d36be70357"
+    ],
+    "sha256": "6f9505d88886834a131c1e06bddadccfe7f53759ea0d0c5fed4ed3d36be70357"
+  },
+  {
+    "name": "codegemma:7b-code-q4_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:f56cab8eb0388de3b6f22ab3546146c5166e8c368b34e64124901fdbb37feb42"
+    ],
+    "sha256": "f56cab8eb0388de3b6f22ab3546146c5166e8c368b34e64124901fdbb37feb42"
+  },
+  {
+    "name": "codegemma:7b-code-q4_1",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:a917aec2d544a1d1969ac45b32fbc0f223f04e13b465d04e3f9f96a30b63ac64"
+    ],
+    "sha256": "a917aec2d544a1d1969ac45b32fbc0f223f04e13b465d04e3f9f96a30b63ac64"
+  },
+  {
+    "name": "codegemma:7b-code-q5_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:cd4072eadc6d7c9ea428ba694919a389ead85763ca07204f01109c3c9e7c9772"
+    ],
+    "sha256": "cd4072eadc6d7c9ea428ba694919a389ead85763ca07204f01109c3c9e7c9772"
+  },
+  {
+    "name": "codegemma:7b-code-q5_1",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:85e892c9a8983e3d421d77404599bf27cbeceeb5e1d6714e03828d81106d8304"
+    ],
+    "sha256": "85e892c9a8983e3d421d77404599bf27cbeceeb5e1d6714e03828d81106d8304"
+  },
+  {
+    "name": "codegemma:7b-code-q8_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:a5f7f8aec7cd475e86fd203bcf4bdc76c2df3172b3d2567656ae4e5360166a5b"
+    ],
+    "sha256": "a5f7f8aec7cd475e86fd203bcf4bdc76c2df3172b3d2567656ae4e5360166a5b"
+  },
+  {
+    "name": "codegemma:7b-code-q2_K",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:48bc29c0c3ef75c61c1e2c6f6c699c302b97748fa7c16fc81548f69fcdd960a0"
+    ],
+    "sha256": "48bc29c0c3ef75c61c1e2c6f6c699c302b97748fa7c16fc81548f69fcdd960a0"
+  },
+  {
+    "name": "codegemma:7b-code-q3_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7d0846032389b38dc6515f26ce3d703e8ac7fff8c0424c9a52218dce804540c6"
+    ],
+    "sha256": "7d0846032389b38dc6515f26ce3d703e8ac7fff8c0424c9a52218dce804540c6"
+  },
+  {
+    "name": "codegemma:7b-code-q3_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:99e1e7097786e585fc0f40f626c0f95297310a0fda44d50ea727900e6ecdc348"
+    ],
+    "sha256": "99e1e7097786e585fc0f40f626c0f95297310a0fda44d50ea727900e6ecdc348"
+  },
+  {
+    "name": "codegemma:7b-code-q3_K_L",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:0fa6547940ce25c8c3f3b792e2331cfbd3f7fdee608b08bfaf6ad600c88f3e14"
+    ],
+    "sha256": "0fa6547940ce25c8c3f3b792e2331cfbd3f7fdee608b08bfaf6ad600c88f3e14"
+  },
+  {
+    "name": "codegemma:7b-code-q4_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:68244bbef0ae6907845fdfa856a61b8fb1d95ca67a047000cfa763b07149336b"
+    ],
+    "sha256": "68244bbef0ae6907845fdfa856a61b8fb1d95ca67a047000cfa763b07149336b"
+  },
+  {
+    "name": "codegemma:7b-code-q4_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:bf077fcd90f1d28f27b01e23269350013665ee2e90151987342236fb3dd45bc0"
+    ],
+    "sha256": "bf077fcd90f1d28f27b01e23269350013665ee2e90151987342236fb3dd45bc0"
+  },
+  {
+    "name": "codegemma:7b-code-q5_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:54e218f8a1d3636dc02e01e6bfeed989ff0d464a421e0ba77ef70401d24be787"
+    ],
+    "sha256": "54e218f8a1d3636dc02e01e6bfeed989ff0d464a421e0ba77ef70401d24be787"
+  },
+  {
+    "name": "codegemma:7b-code-q5_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:23dae5a2c79967b811271f30d562ed4dc4328dbcd397f2ffd46146707f362fcf"
+    ],
+    "sha256": "23dae5a2c79967b811271f30d562ed4dc4328dbcd397f2ffd46146707f362fcf"
+  },
+  {
+    "name": "codegemma:7b-code-q6_K",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:cebb6a9bf4a188501567b249c1ac17fc5970926d05a0ba7eddf468ba9afef4c0"
+    ],
+    "sha256": "cebb6a9bf4a188501567b249c1ac17fc5970926d05a0ba7eddf468ba9afef4c0"
+  },
+  {
+    "name": "codegemma:7b-code-fp16",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:91fc3c47f7f572e6b67ba9c13dba174e10f59d6babfaf729b19f67dba8bcf6bd"
+    ],
+    "sha256": "91fc3c47f7f572e6b67ba9c13dba174e10f59d6babfaf729b19f67dba8bcf6bd"
+  },
+  {
+    "name": "codegemma:7b-instruct-q4_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    ],
+    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+  },
+  {
+    "name": "codegemma:7b-instruct-q4_1",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:c1ef2ed3c78a31e62d327509ca4fc6854be7356f7d0944c83f75eaa42a65c860"
+    ],
+    "sha256": "c1ef2ed3c78a31e62d327509ca4fc6854be7356f7d0944c83f75eaa42a65c860"
+  },
+  {
+    "name": "codegemma:7b-instruct-q5_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:2a29b2083ebabcc62b8303abe343f66736fa7ba1f79facb823ec7fb099735a7e"
+    ],
+    "sha256": "2a29b2083ebabcc62b8303abe343f66736fa7ba1f79facb823ec7fb099735a7e"
+  },
+  {
+    "name": "codegemma:7b-instruct-q5_1",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:d2bcd0d74bc5eafe8aca19db1be19e691705d03c45d396a71adc8639a35c5795"
+    ],
+    "sha256": "d2bcd0d74bc5eafe8aca19db1be19e691705d03c45d396a71adc8639a35c5795"
+  },
+  {
+    "name": "codegemma:7b-instruct-q8_0",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:20b20ee7b4265a5872bd58d669c394206f50418f3523b47563c9b1d4a78f37cb"
+    ],
+    "sha256": "20b20ee7b4265a5872bd58d669c394206f50418f3523b47563c9b1d4a78f37cb"
+  },
+  {
+    "name": "codegemma:7b-instruct-q2_K",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:2137856a8d4a132d134e60f1296d052afcaaa6c47c9de030cd6c34a06e368a62"
+    ],
+    "sha256": "2137856a8d4a132d134e60f1296d052afcaaa6c47c9de030cd6c34a06e368a62"
+  },
+  {
+    "name": "codegemma:7b-instruct-q3_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:e5e74ebd025b01d38ee1be546f3ef94d83b7006e7824404d74d246f109241eb4"
+    ],
+    "sha256": "e5e74ebd025b01d38ee1be546f3ef94d83b7006e7824404d74d246f109241eb4"
+  },
+  {
+    "name": "codegemma:7b-instruct-q3_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:188832bbe5961c3d6856e416fccdf22fdcfaeadebaae5bd6931fdbac9e0ba26c"
+    ],
+    "sha256": "188832bbe5961c3d6856e416fccdf22fdcfaeadebaae5bd6931fdbac9e0ba26c"
+  },
+  {
+    "name": "codegemma:7b-instruct-q3_K_L",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:70dcee64d9aef793e46de737ae8a9e0ccc2163a2e4b157321b1be102d6033d43"
+    ],
+    "sha256": "70dcee64d9aef793e46de737ae8a9e0ccc2163a2e4b157321b1be102d6033d43"
+  },
+  {
+    "name": "codegemma:7b-instruct-q4_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:2b3dd77f2c7d2582f581cdc2285009afb5d3e5baf528d68acf9c756f9dce0111"
+    ],
+    "sha256": "2b3dd77f2c7d2582f581cdc2285009afb5d3e5baf528d68acf9c756f9dce0111"
+  },
+  {
+    "name": "codegemma:7b-instruct-q4_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:5e90470aa15739c7653da6853723129c403aa38d2b6ced251553badb164e3e29"
+    ],
+    "sha256": "5e90470aa15739c7653da6853723129c403aa38d2b6ced251553badb164e3e29"
+  },
+  {
+    "name": "codegemma:7b-instruct-q5_K_S",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:39cc4029eaefe00b555a232fe25b9f7d03b7a7881ff6775e2949c3419ec2c71d"
+    ],
+    "sha256": "39cc4029eaefe00b555a232fe25b9f7d03b7a7881ff6775e2949c3419ec2c71d"
+  },
+  {
+    "name": "codegemma:7b-instruct-q5_K_M",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:1cb5146aa073d3f200802dc3b8bdfcbd64ce7b3284367d5d2dc0b4d23eb08c15"
+    ],
+    "sha256": "1cb5146aa073d3f200802dc3b8bdfcbd64ce7b3284367d5d2dc0b4d23eb08c15"
+  },
+  {
+    "name": "codegemma:7b-instruct-q6_K",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:0b17fdc676ac4fdf308db7fc08a40b2e28909d37133e25f9cd724191e5a26f3b"
+    ],
+    "sha256": "0b17fdc676ac4fdf308db7fc08a40b2e28909d37133e25f9cd724191e5a26f3b"
+  },
+  {
+    "name": "codegemma:7b-instruct-fp16",
+    "provider_url": "https://ollama.com/library/codegemma",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca",
+    "prompt_template": "<｜fim_prefix｜>{prefix}<｜fim_suffix｜>{suffix}<｜fim_middle｜>",
+    "chat_template": "<bos>\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '<start_of_turn>user\n' + message['content'] + '\n<start_of_turn>model\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:0abd099e776c0a255e2bc8957dc85994a1ec07a53fead702170e235473545296"
+    ],
+    "sha256": "0abd099e776c0a255e2bc8957dc85994a1ec07a53fead702170e235473545296"
   },
   {
     "name": "mistral:latest",
