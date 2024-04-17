@@ -34,8 +34,8 @@ Example:
 | starcoder                    | No    | Yes         |                                                                   |
 | starcoder2                   | No    | Yes         |                                                                   |
 | deepseek-coder               | Yes   | Yes         |                                                                   |
-| gemma                        | Yes   | No          |                                                                   |
-| codegemma                    | Yes   | Yes         |                                                                   |
+| gemma                        | Yes   | No          |  Requires Tabby 0.10+ or after [commit](https://github.com/TabbyML/tabby/pull/1805/commits/4b5217533ee842ec3f4709dae9337a91969f3c41)   |
+| codegemma                    | Yes   | Yes         | Requires Tabby 0.10+ or after [commit](https://github.com/TabbyML/tabby/pull/1805/commits/4b5217533ee842ec3f4709dae9337a91969f3c41) |
 | mistral                      | Yes   | No          |                                                                   |
 | mixtral                      | Yes   | No          |                                                                   |
 | wizardcoder                  | Yes   | No          |                                                                   |
