@@ -55,8 +55,8 @@ async fn main() -> Result<()> {
     }
 
     while let Some(f) = futures.next().await {
-        let output = f??;
-        outputs.push(output);
+        let mut output = f??;
+        outputs.append(&mut output)
     }
 
     serde_json::to_writer_pretty(output_file, &outputs)?;
