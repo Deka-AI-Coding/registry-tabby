@@ -59,6 +59,14 @@ async fn main() -> Result<()> {
         outputs.append(&mut output)
     }
 
+    outputs.sort_unstable_by(|l, r| {
+        if l.name != r.name {
+            l.name.cmp(&r.name)
+        } else {
+            l.sha256.cmp(&r.sha256)
+        }
+    });
+
     serde_json::to_writer_pretty(output_file, &outputs)?;
 
     Ok(())
