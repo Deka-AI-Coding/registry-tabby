@@ -3,14 +3,16 @@ use std::fs::File;
 use std::process::exit;
 
 use anyhow::Result;
-use model::Model;
+use futures::stream::FuturesUnordered;
+use futures::StreamExt;
 
 use crate::model::ModelInput;
+use model::Model;
 
 mod model;
 mod ollama;
 
-async fn convert(model_input: &ModelInput) -> anyhow::Result<Vec<Model>> {
+async fn convert(model_input: ModelInput) -> anyhow::Result<Vec<Model>> {
     let mut out = vec![];
 
     for tag in &model_input.tags {
@@ -43,12 +45,18 @@ async fn main() -> Result<()> {
     let input_file = File::open(&args[1])?;
     let output_file = File::create(&args[2])?;
 
-    let inputs: Vec<ModelInput> = serde_yaml::from_reader(input_file)?;
+    let mut inputs: Vec<ModelInput> = serde_yaml::from_reader(input_file)?;
+    let mut futures = FuturesUnordered::new();
     let mut outputs = vec![];
 
-    for input in &inputs {
-        let mut out_models = convert(input).await?;
-        outputs.append(&mut out_models);
+    while let Some(input) = inputs.pop() {
+        let future = tokio::spawn(convert(input));
+        futures.push(future);
+    }
+
+    while let Some(f) = futures.next().await {
+        let output = f??;
+        outputs.push(output);
     }
 
     serde_json::to_writer_pretty(output_file, &outputs)?;
