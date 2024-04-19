@@ -476,28 +476,49 @@
   tags:
     - latest
     - 8x7b
-    - text
+    - 8x22b
     - instruct
+    - text
+    - 8x22b-instruct
+    - 8x22b-text
+    - 8x22b-instruct-v0.1-q4_0
     - 8x7b-instruct-v0.1-q4_0
+    - 8x22b-instruct-v0.1-q4_1
     - 8x7b-instruct-v0.1-q4_1
     - 8x7b-instruct-v0.1-q5_0
+    - 8x22b-instruct-v0.1-q5_0
+    - 8x22b-instruct-v0.1-q5_1
     - 8x7b-instruct-v0.1-q5_1
     - 8x7b-instruct-v0.1-q8_0
+    - 8x22b-instruct-v0.1-q8_0
     - 8x7b-instruct-v0.1-q2_K
+    - 8x22b-instruct-v0.1-q2_K
+    - 8x22b-instruct-v0.1-q3_K_S
     - 8x7b-instruct-v0.1-q3_K_S
+    - 8x22b-instruct-v0.1-q3_K_M
     - 8x7b-instruct-v0.1-q3_K_M
+    - 8x22b-instruct-v0.1-q3_K_L
     - 8x7b-instruct-v0.1-q3_K_L
+    - 8x22b-instruct-v0.1-q4_K_S
     - 8x7b-instruct-v0.1-q4_K_S
     - 8x7b-instruct-v0.1-q4_K_M
+    - 8x22b-instruct-v0.1-q4_K_M
     - 8x7b-instruct-v0.1-q5_K_S
+    - 8x22b-instruct-v0.1-q5_K_S
     - 8x7b-instruct-v0.1-q5_K_M
+    - 8x22b-instruct-v0.1-q5_K_M
+    - 8x22b-instruct-v0.1-q6_K
     - 8x7b-instruct-v0.1-q6_K
+    - 8x22b-instruct-v0.1-fp16
     - 8x7b-instruct-v0.1-fp16
     - 8x7b-text-v0.1-q4_0
+    - 8x22b-text-v0.1-q4_0
     - 8x7b-text-v0.1-q4_1
     - 8x7b-text-v0.1-q5_0
     - 8x7b-text-v0.1-q5_1
     - 8x7b-text-v0.1-q8_0
+    - 8x22b-text-v0.1-q8_0
+    - 8x22b-text-v0.1-q2_K
     - 8x7b-text-v0.1-q2_K
     - 8x7b-text-v0.1-q3_K_S
     - 8x7b-text-v0.1-q3_K_M
@@ -507,6 +528,7 @@
     - 8x7b-text-v0.1-q5_K_S
     - 8x7b-text-v0.1-q5_K_M
     - 8x7b-text-v0.1-q6_K
+    - 8x22b-text-v0.1-fp16
     - 8x7b-text-v0.1-fp16
 
 - name: wizardcoder
