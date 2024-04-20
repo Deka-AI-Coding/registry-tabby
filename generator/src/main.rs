@@ -15,8 +15,17 @@ mod ollama;
 async fn convert(model_input: ModelInput) -> anyhow::Result<Vec<Model>> {
     let mut out = vec![];
 
-    for tag in &model_input.tags {
-        let mut tmp_model = ollama::parse_model(&model_input.name, tag).await?;
+    let mut tags = model_input.tags.clone();
+    let mut futures = FuturesUnordered::new();
+
+    while let Some(tag) = tags.pop() {
+        let name_clone = model_input.name.clone();
+        let future = tokio::spawn(async { ollama::parse_model(name_clone, tag).await });
+        futures.push(future);
+    }
+
+    while let Some(f) = futures.next().await {
+        let mut tmp_model = f??;
 
         // Override
         model_input.chat_template.as_ref().inspect(|m| {

@@ -45,26 +45,26 @@ async fn get_manifest(name: &str, tag: &str) -> Result<manifest::Manifest> {
         .map_err(|e| e.into())
 }
 
-pub async fn parse_model(name: &str, tag: &str) -> Result<Model> {
-    let manifest = get_manifest(name, tag).await?;
+pub async fn parse_model(name: String, tag: String) -> Result<Model> {
+    let manifest = get_manifest(&name, &tag).await?;
 
     let license = manifest.license_layer();
     let model = manifest.model_layer().ok_or(Error::MissingModel)?;
     let checksum = model.checksum().ok_or(Error::Sha256Format)?;
 
     let license_url = if let Some(layer) = license {
-        get_layer_url(name, layer)
+        get_layer_url(&name, layer)
     } else {
-        get_provider_url(name)
+        get_provider_url(&name)
     };
 
     Ok(Model {
         name: format!("{}:{}", name, tag),
         license_url,
-        provider_url: get_provider_url(name),
+        provider_url: get_provider_url(&name),
         sha256: checksum,
 
-        urls: vec![get_layer_url(name, model)],
+        urls: vec![get_layer_url(&name, model)],
 
         // To be filled by the yaml
         prompt_template: None,
