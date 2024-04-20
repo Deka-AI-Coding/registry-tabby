@@ -43,4 +43,5 @@ Example:
 | openhermes                   | Yes   | No          |                                                                   |
 | nous-hermes2                 | Yes   | No          |                                                                   |
 | nous-hermes2-mixtral         | Yes   | No          |                                                                   |
+| codeqwen                     | Yes   | Yes         | `chat` for chat, `code` for completion, others for chat           |
 
