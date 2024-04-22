@@ -44,5 +44,5 @@ Example:
 | nous-hermes2                 | Yes   | No          |                                                                   |
 | nous-hermes2-mixtral         | Yes   | No          |                                                                   |
 | codeqwen                     | Yes   | Yes         | `chat` for chat, `code` for completion, others for chat           |
-| llama3                       | Yes   | No          | `instruct` models should be used                                  |
+| llama3                       | Yes   | No          | Unsupported stop words, so looping will happen                    |
 
