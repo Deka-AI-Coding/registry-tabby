@@ -6,9 +6,9 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:ff35425df6d450f19ee0ca904ddfb84a6756f0d4a1182df37c1599278097ff38"
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:dd0c6f2ea876e4c433325df3398386f24e00d321abf6cec197c1bc1fcf1e0025"
     ],
-    "sha256": "ff35425df6d450f19ee0ca904ddfb84a6756f0d4a1182df37c1599278097ff38"
+    "sha256": "dd0c6f2ea876e4c433325df3398386f24e00d321abf6cec197c1bc1fcf1e0025"
   },
   {
     "name": "codegemma:2b-code",
@@ -17,9 +17,9 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:ff35425df6d450f19ee0ca904ddfb84a6756f0d4a1182df37c1599278097ff38"
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:dd0c6f2ea876e4c433325df3398386f24e00d321abf6cec197c1bc1fcf1e0025"
     ],
-    "sha256": "ff35425df6d450f19ee0ca904ddfb84a6756f0d4a1182df37c1599278097ff38"
+    "sha256": "dd0c6f2ea876e4c433325df3398386f24e00d321abf6cec197c1bc1fcf1e0025"
   },
   {
     "name": "codegemma:2b-code-fp16",
@@ -193,9 +193,9 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:392f2ba7a9bea371a2e27b547cbed87eb3964ac722b26d847b66fa90e5b8c49e"
     ],
-    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    "sha256": "392f2ba7a9bea371a2e27b547cbed87eb3964ac722b26d847b66fa90e5b8c49e"
   },
   {
     "name": "codegemma:7b-code",
@@ -380,9 +380,9 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:392f2ba7a9bea371a2e27b547cbed87eb3964ac722b26d847b66fa90e5b8c49e"
     ],
-    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    "sha256": "392f2ba7a9bea371a2e27b547cbed87eb3964ac722b26d847b66fa90e5b8c49e"
   },
   {
     "name": "codegemma:7b-instruct-fp16",
@@ -556,9 +556,9 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:ff35425df6d450f19ee0ca904ddfb84a6756f0d4a1182df37c1599278097ff38"
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:dd0c6f2ea876e4c433325df3398386f24e00d321abf6cec197c1bc1fcf1e0025"
     ],
-    "sha256": "ff35425df6d450f19ee0ca904ddfb84a6756f0d4a1182df37c1599278097ff38"
+    "sha256": "dd0c6f2ea876e4c433325df3398386f24e00d321abf6cec197c1bc1fcf1e0025"
   },
   {
     "name": "codegemma:instruct",
@@ -567,9 +567,9 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:392f2ba7a9bea371a2e27b547cbed87eb3964ac722b26d847b66fa90e5b8c49e"
     ],
-    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    "sha256": "392f2ba7a9bea371a2e27b547cbed87eb3964ac722b26d847b66fa90e5b8c49e"
   },
   {
     "name": "codegemma:latest",
@@ -578,9 +578,9 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+      "https://registry.ollama.ai:443/v2/library/codegemma/blobs/sha256:392f2ba7a9bea371a2e27b547cbed87eb3964ac722b26d847b66fa90e5b8c49e"
     ],
-    "sha256": "7cb8cb805c5353eea303c6020a50cc5722af91c1528e513eee6866175dfb842f"
+    "sha256": "392f2ba7a9bea371a2e27b547cbed87eb3964ac722b26d847b66fa90e5b8c49e"
   },
   {
     "name": "codellama:13b",
@@ -4815,6 +4815,366 @@
     "sha256": "df18cdedaff1b11064352ce43a1a3dec8b69af8191b901b3469998e39d4d643a"
   },
   {
+    "name": "llama3-chatqa:70b",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:23cc510e5cbfa6f19181be1dd2730f158ccb6110f7fbdffd358db31f98962dd8"
+    ],
+    "sha256": "23cc510e5cbfa6f19181be1dd2730f158ccb6110f7fbdffd358db31f98962dd8"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:23cc510e5cbfa6f19181be1dd2730f158ccb6110f7fbdffd358db31f98962dd8"
+    ],
+    "sha256": "23cc510e5cbfa6f19181be1dd2730f158ccb6110f7fbdffd358db31f98962dd8"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-fp16",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:35a87f63cf2006480ed6ec0c36b482485b2ad8c19ea81a834d7ea03645dca4a9"
+    ],
+    "sha256": "35a87f63cf2006480ed6ec0c36b482485b2ad8c19ea81a834d7ea03645dca4a9"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q2_K",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:814efb7f00b7cca5c970365b307f461dc986248ca1bd4089f171207012eb9689"
+    ],
+    "sha256": "814efb7f00b7cca5c970365b307f461dc986248ca1bd4089f171207012eb9689"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q3_K_L",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:0e250e72a21544261a5f02cc8ca8c51f3088161e27abe03d6b3bff42c5cc6fab"
+    ],
+    "sha256": "0e250e72a21544261a5f02cc8ca8c51f3088161e27abe03d6b3bff42c5cc6fab"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q3_K_M",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:04e269f9d6012cbb6fe2494b91279e4d5ce80d111d8a24602300f55737df58a6"
+    ],
+    "sha256": "04e269f9d6012cbb6fe2494b91279e4d5ce80d111d8a24602300f55737df58a6"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q3_K_S",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:5ef6eceb497db29193eceff249f131dd625e55b968d4add68619eb5fefccb362"
+    ],
+    "sha256": "5ef6eceb497db29193eceff249f131dd625e55b968d4add68619eb5fefccb362"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q4_0",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:23cc510e5cbfa6f19181be1dd2730f158ccb6110f7fbdffd358db31f98962dd8"
+    ],
+    "sha256": "23cc510e5cbfa6f19181be1dd2730f158ccb6110f7fbdffd358db31f98962dd8"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q4_1",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:5db0434b4bf94fff9a5588b37d7fef05e8f803258b1cbef5731b31b5fa433211"
+    ],
+    "sha256": "5db0434b4bf94fff9a5588b37d7fef05e8f803258b1cbef5731b31b5fa433211"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q4_K_M",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:77889da8194e3439838d5c62cd91acdc19c4f7c6e40692dbe507f1489c512301"
+    ],
+    "sha256": "77889da8194e3439838d5c62cd91acdc19c4f7c6e40692dbe507f1489c512301"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q4_K_S",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:99e073aa892469eb6d96cb570aeb4d0306c66532dda5a20990580b5f3abe4420"
+    ],
+    "sha256": "99e073aa892469eb6d96cb570aeb4d0306c66532dda5a20990580b5f3abe4420"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q5_0",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:b6611dd6721cf193bc940898e936ee51f8de21aa25d77ae4f096c698c7966e0d"
+    ],
+    "sha256": "b6611dd6721cf193bc940898e936ee51f8de21aa25d77ae4f096c698c7966e0d"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q5_1",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:fa7041ff8eecd52eefe78d3a73c872812732706d227aff49413ff4509c29fed3"
+    ],
+    "sha256": "fa7041ff8eecd52eefe78d3a73c872812732706d227aff49413ff4509c29fed3"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q5_K_M",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:66eda707426c1c1b1b57551a76c2f0d4b9e64c3e880272144763475affe1f571"
+    ],
+    "sha256": "66eda707426c1c1b1b57551a76c2f0d4b9e64c3e880272144763475affe1f571"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q5_K_S",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:dd491f6f8c8509dbf10a378def3d37d1c40ad7436cff84dc4227b1232ca9be47"
+    ],
+    "sha256": "dd491f6f8c8509dbf10a378def3d37d1c40ad7436cff84dc4227b1232ca9be47"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q6_K",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:29fdc8d91e6723b141ff805961a0f277eac942c6518fdb208aab68613fef6ae9"
+    ],
+    "sha256": "29fdc8d91e6723b141ff805961a0f277eac942c6518fdb208aab68613fef6ae9"
+  },
+  {
+    "name": "llama3-chatqa:70b-v1.5-q8_0",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:fcad420fa7ff5c86f24615ffa113059ab1870921370985f22e0fd2f4ec149ae9"
+    ],
+    "sha256": "fcad420fa7ff5c86f24615ffa113059ab1870921370985f22e0fd2f4ec149ae9"
+  },
+  {
+    "name": "llama3-chatqa:8b",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+    ],
+    "sha256": "df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+    ],
+    "sha256": "df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-fp16",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:58728264063439360fe00f0c63808753ce3ff2a3edc3f8ac3226f7383d86a6ec"
+    ],
+    "sha256": "58728264063439360fe00f0c63808753ce3ff2a3edc3f8ac3226f7383d86a6ec"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q2_K",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:9443195a0aa3f52a740300e94c12861c9409b37fcb6a86a2ee0e15d85734112c"
+    ],
+    "sha256": "9443195a0aa3f52a740300e94c12861c9409b37fcb6a86a2ee0e15d85734112c"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q3_K_L",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:c404ac548c5e4931922f04f4c9050a303a9e0af336cf300f3a6b5226ca07a24f"
+    ],
+    "sha256": "c404ac548c5e4931922f04f4c9050a303a9e0af336cf300f3a6b5226ca07a24f"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q3_K_M",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:a342b72a849dbbeb8db6cb7a1bad84dbbd348cc2b377015c2173054bcd761dd5"
+    ],
+    "sha256": "a342b72a849dbbeb8db6cb7a1bad84dbbd348cc2b377015c2173054bcd761dd5"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q3_K_S",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:2ce6476d4f012119e0375ac31ddf830cc6aabb3b47cd69ec034e2f89d1c05170"
+    ],
+    "sha256": "2ce6476d4f012119e0375ac31ddf830cc6aabb3b47cd69ec034e2f89d1c05170"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q4_0",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+    ],
+    "sha256": "df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q4_1",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:445f643c8351470674a936a1be1daab3d82801bb10d5e90ac55c5005f97d7513"
+    ],
+    "sha256": "445f643c8351470674a936a1be1daab3d82801bb10d5e90ac55c5005f97d7513"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q4_K_M",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:0ecb6b3cdd08ee4f4f662e5cb5e1e9f3662a927bdff9d5419204f1db5ec4c2ce"
+    ],
+    "sha256": "0ecb6b3cdd08ee4f4f662e5cb5e1e9f3662a927bdff9d5419204f1db5ec4c2ce"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q4_K_S",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:b90bf377347c364210f25f839b0ba467380678c8f75d8aca88d05d51d42e997b"
+    ],
+    "sha256": "b90bf377347c364210f25f839b0ba467380678c8f75d8aca88d05d51d42e997b"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q5_0",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:cd9abc03010f855160d343d54587a25b7e6c5576b2aa36f13ea51ea2c9a4d676"
+    ],
+    "sha256": "cd9abc03010f855160d343d54587a25b7e6c5576b2aa36f13ea51ea2c9a4d676"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q5_1",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:ca080812c2c4a9fbb1b6494068efe04e2cbdad315357d07ccfcdecf69e2f3c5f"
+    ],
+    "sha256": "ca080812c2c4a9fbb1b6494068efe04e2cbdad315357d07ccfcdecf69e2f3c5f"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q5_K_M",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:9abc65b867f2d1c47d543b8449b1fae666568b760fba27b41fca250f9387de6d"
+    ],
+    "sha256": "9abc65b867f2d1c47d543b8449b1fae666568b760fba27b41fca250f9387de6d"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q5_K_S",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:24b0968ec444c8abcfc6ff4ba2a933459025aba2b1b3bfb02badccea9882d46d"
+    ],
+    "sha256": "24b0968ec444c8abcfc6ff4ba2a933459025aba2b1b3bfb02badccea9882d46d"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q6_K",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:c4cc7f21ebb1f3b0af84621943905ecef8f8701ed2ecb5ec646815c0acca6e0f"
+    ],
+    "sha256": "c4cc7f21ebb1f3b0af84621943905ecef8f8701ed2ecb5ec646815c0acca6e0f"
+  },
+  {
+    "name": "llama3-chatqa:8b-v1.5-q8_0",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:6bb5af982dd7239b4f9d089f54e41199c9bb281ed49b479713e7a98c756c6318"
+    ],
+    "sha256": "6bb5af982dd7239b4f9d089f54e41199c9bb281ed49b479713e7a98c756c6318"
+  },
+  {
+    "name": "llama3-chatqa:latest",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+    ],
+    "sha256": "df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+  },
+  {
+    "name": "llama3-chatqa:latest",
+    "provider_url": "https://ollama.com/library/llama3-chatqa",
+    "license_url": "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: ",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/llama3-chatqa/blobs/sha256:df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+    ],
+    "sha256": "df02d0708a46bcb38f1f2c16ce958c6785ac708328fb76a3f4c440e8cec88e91"
+  },
+  {
     "name": "llama3:70b",
     "provider_url": "https://ollama.com/library/llama3",
     "license_url": "https://registry.ollama.ai:443/v2/library/llama3/blobs/sha256:4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
@@ -6160,9 +6520,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:7ec0c94a95cafef2780d00679e83f172ac343bc828aebbe2a5475fbe2daf76ff"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:d0eeef8264ce10a7e578789ee69986c66425639e72c9855e36a0345c230918c9"
     ],
-    "sha256": "7ec0c94a95cafef2780d00679e83f172ac343bc828aebbe2a5475fbe2daf76ff"
+    "sha256": "d0eeef8264ce10a7e578789ee69986c66425639e72c9855e36a0345c230918c9"
   },
   {
     "name": "mixtral:8x22b-instruct",
@@ -6170,9 +6530,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:7ec0c94a95cafef2780d00679e83f172ac343bc828aebbe2a5475fbe2daf76ff"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:d0eeef8264ce10a7e578789ee69986c66425639e72c9855e36a0345c230918c9"
     ],
-    "sha256": "7ec0c94a95cafef2780d00679e83f172ac343bc828aebbe2a5475fbe2daf76ff"
+    "sha256": "d0eeef8264ce10a7e578789ee69986c66425639e72c9855e36a0345c230918c9"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-fp16",
@@ -6180,9 +6540,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:f9bf59427e2364f2fc645be6bde75de1da7ab4b15c522015c4eb2e4817c7beea"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:ce6da54c165bd9d4f96818016521aef2106dcc09c9e8b4990837b7b44ba2d78d"
     ],
-    "sha256": "f9bf59427e2364f2fc645be6bde75de1da7ab4b15c522015c4eb2e4817c7beea"
+    "sha256": "ce6da54c165bd9d4f96818016521aef2106dcc09c9e8b4990837b7b44ba2d78d"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q2_K",
@@ -6190,9 +6550,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43f044d9236e78d70a29319efe06c252473795368190405147c145c0f0ee6e51"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:3e0ec07b23a0f44868fea6f84d4c2855b92ab351b0d7dcfc7dce0602caeb0e74"
     ],
-    "sha256": "43f044d9236e78d70a29319efe06c252473795368190405147c145c0f0ee6e51"
+    "sha256": "3e0ec07b23a0f44868fea6f84d4c2855b92ab351b0d7dcfc7dce0602caeb0e74"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q3_K_L",
@@ -6200,9 +6560,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:0814a32d17e686419ed330f6ef98354176c540d603f9bb300eb07b7347ad9bc6"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:e61df63c0f51df0942e2e8169b40fe0723bdfde7f53d6b0522f75057b066e122"
     ],
-    "sha256": "0814a32d17e686419ed330f6ef98354176c540d603f9bb300eb07b7347ad9bc6"
+    "sha256": "e61df63c0f51df0942e2e8169b40fe0723bdfde7f53d6b0522f75057b066e122"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q3_K_M",
@@ -6210,9 +6570,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:0303cc3e524f4d15c27e40ba590db9edbf38f5248708fd21ca2d877532e08ef4"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:85bbeb31e9a57b841db2386003d8b057acbe0dce01e1939711cd533ccbc69bca"
     ],
-    "sha256": "0303cc3e524f4d15c27e40ba590db9edbf38f5248708fd21ca2d877532e08ef4"
+    "sha256": "85bbeb31e9a57b841db2386003d8b057acbe0dce01e1939711cd533ccbc69bca"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q3_K_S",
@@ -6220,9 +6580,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:48825b7c4a05dc4f13e01c497a25d0cdbe3e28fabebbfc32e60baa6eefcc14f2"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:6edd045f3b36e21babef26469ba518339e219e147e0d324d85df078569550aed"
     ],
-    "sha256": "48825b7c4a05dc4f13e01c497a25d0cdbe3e28fabebbfc32e60baa6eefcc14f2"
+    "sha256": "6edd045f3b36e21babef26469ba518339e219e147e0d324d85df078569550aed"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q4_0",
@@ -6230,9 +6590,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:7ec0c94a95cafef2780d00679e83f172ac343bc828aebbe2a5475fbe2daf76ff"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:d0eeef8264ce10a7e578789ee69986c66425639e72c9855e36a0345c230918c9"
     ],
-    "sha256": "7ec0c94a95cafef2780d00679e83f172ac343bc828aebbe2a5475fbe2daf76ff"
+    "sha256": "d0eeef8264ce10a7e578789ee69986c66425639e72c9855e36a0345c230918c9"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q4_1",
@@ -6240,9 +6600,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:9e039f809ce31f0cf754d41d8cb3f92fb2a7ef3471086c31df165318736ff44a"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:c74a310b9e7a06688e13918d1dd60891af2f0d29c662883e843c96c63c668436"
     ],
-    "sha256": "9e039f809ce31f0cf754d41d8cb3f92fb2a7ef3471086c31df165318736ff44a"
+    "sha256": "c74a310b9e7a06688e13918d1dd60891af2f0d29c662883e843c96c63c668436"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q4_K_M",
@@ -6250,9 +6610,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:15427724310c95ce49bc1364c8349eb05fcb25f15ea1bd49aabd9897ee8a8bc7"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:82c6828b50bbdb70db6f2717905fa79c6779a874336f8ea326d3668520a5d2e9"
     ],
-    "sha256": "15427724310c95ce49bc1364c8349eb05fcb25f15ea1bd49aabd9897ee8a8bc7"
+    "sha256": "82c6828b50bbdb70db6f2717905fa79c6779a874336f8ea326d3668520a5d2e9"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q4_K_S",
@@ -6260,9 +6620,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:95d9b632cc72910e26c5f1710f660862972b4293b540938fa0b2024ea81a8ccc"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:d5754b7051a5731854c1fcf52d8222b9c8795b9debc02021a0605b68c2e8008e"
     ],
-    "sha256": "95d9b632cc72910e26c5f1710f660862972b4293b540938fa0b2024ea81a8ccc"
+    "sha256": "d5754b7051a5731854c1fcf52d8222b9c8795b9debc02021a0605b68c2e8008e"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q5_0",
@@ -6270,9 +6630,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:225cbf6580a422b7de6132ec41536f24f3dac6e8cab214ae1c0895865de342b2"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:429025680e1dc8350f2ea8257442751109c4e97dc069ac9ef296c7e2a8275de4"
     ],
-    "sha256": "225cbf6580a422b7de6132ec41536f24f3dac6e8cab214ae1c0895865de342b2"
+    "sha256": "429025680e1dc8350f2ea8257442751109c4e97dc069ac9ef296c7e2a8275de4"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q5_1",
@@ -6280,9 +6640,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:996f8c3e1ed47d83a86f5f9d50870ec23914c57258e29b0b709fe30d5746f82e"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:d52f1508df7aeeb5b1143b2575a9bebbe8cda60ad2ea42ec25bcb8268ed34ccc"
     ],
-    "sha256": "996f8c3e1ed47d83a86f5f9d50870ec23914c57258e29b0b709fe30d5746f82e"
+    "sha256": "d52f1508df7aeeb5b1143b2575a9bebbe8cda60ad2ea42ec25bcb8268ed34ccc"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q5_K_M",
@@ -6290,9 +6650,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:630983e98a0c92b38850c213cb1d4a8a724635ccabf84fdf70f3fad6a862ce52"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:a83a0ad30b31bbf106d390f33e9b23cc73c9384497c62748485d59c838d94819"
     ],
-    "sha256": "630983e98a0c92b38850c213cb1d4a8a724635ccabf84fdf70f3fad6a862ce52"
+    "sha256": "a83a0ad30b31bbf106d390f33e9b23cc73c9384497c62748485d59c838d94819"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q5_K_S",
@@ -6300,9 +6660,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:dc992c0d00daf1ac63eedc5613a29a774e3990f6c6f6a7a258bae640a8fa00e3"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:97c37f20822074e074f60039027cd05d95c9289cf740d04a8e8af1a371908800"
     ],
-    "sha256": "dc992c0d00daf1ac63eedc5613a29a774e3990f6c6f6a7a258bae640a8fa00e3"
+    "sha256": "97c37f20822074e074f60039027cd05d95c9289cf740d04a8e8af1a371908800"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q6_K",
@@ -6310,9 +6670,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:8cf07cdca12d6a856f9c9e42be08c088c4e902aaf57805a34cabe2f8fbae5400"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:17b6598e4ee34e8513cad7b91ab1d2c9698aa4cce6a5851ab3fe7d23c919fda7"
     ],
-    "sha256": "8cf07cdca12d6a856f9c9e42be08c088c4e902aaf57805a34cabe2f8fbae5400"
+    "sha256": "17b6598e4ee34e8513cad7b91ab1d2c9698aa4cce6a5851ab3fe7d23c919fda7"
   },
   {
     "name": "mixtral:8x22b-instruct-v0.1-q8_0",
@@ -6320,9 +6680,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:d88f799d2a622f588f250913161acc21617852484e550b8c737b108be08d83b8"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:055e6e1b1b0f34d2f5fc54074410745d699e6ce69ca46f68361228884fab7f3e"
     ],
-    "sha256": "d88f799d2a622f588f250913161acc21617852484e550b8c737b108be08d83b8"
+    "sha256": "055e6e1b1b0f34d2f5fc54074410745d699e6ce69ca46f68361228884fab7f3e"
   },
   {
     "name": "mixtral:8x22b-text",
@@ -6330,9 +6690,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:373c4038c2d0dad733d6d29d5f635b7fda61ffa972ab3c4d89e516a7c0bdd80c"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:cac8acb2e773804963900849be9e3f2cc5e8641fd90742ba2ef1fa91e802f00f"
     ],
-    "sha256": "373c4038c2d0dad733d6d29d5f635b7fda61ffa972ab3c4d89e516a7c0bdd80c"
+    "sha256": "cac8acb2e773804963900849be9e3f2cc5e8641fd90742ba2ef1fa91e802f00f"
   },
   {
     "name": "mixtral:8x22b-text-v0.1-fp16",
@@ -6340,9 +6700,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:fa3594162d29e2d913904c2b516217b2e4e64be69a377794d065da23193a7cd8"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:1d39adb9d3742f07e57942b5d3cffbb6ae47756e6bcf5a46f85bb765fb97e780"
     ],
-    "sha256": "fa3594162d29e2d913904c2b516217b2e4e64be69a377794d065da23193a7cd8"
+    "sha256": "1d39adb9d3742f07e57942b5d3cffbb6ae47756e6bcf5a46f85bb765fb97e780"
   },
   {
     "name": "mixtral:8x22b-text-v0.1-q2_K",
@@ -6350,9 +6710,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:6181182a74656b1297e6e615693f546d108179fe81ffba054a9020ce0164d86e"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:636ce9fbdfb64abccc164f1f2cc82cbdc04c0dccb139343660c4e107b48552f0"
     ],
-    "sha256": "6181182a74656b1297e6e615693f546d108179fe81ffba054a9020ce0164d86e"
+    "sha256": "636ce9fbdfb64abccc164f1f2cc82cbdc04c0dccb139343660c4e107b48552f0"
   },
   {
     "name": "mixtral:8x22b-text-v0.1-q4_0",
@@ -6360,9 +6720,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:373c4038c2d0dad733d6d29d5f635b7fda61ffa972ab3c4d89e516a7c0bdd80c"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:cac8acb2e773804963900849be9e3f2cc5e8641fd90742ba2ef1fa91e802f00f"
     ],
-    "sha256": "373c4038c2d0dad733d6d29d5f635b7fda61ffa972ab3c4d89e516a7c0bdd80c"
+    "sha256": "cac8acb2e773804963900849be9e3f2cc5e8641fd90742ba2ef1fa91e802f00f"
   },
   {
     "name": "mixtral:8x22b-text-v0.1-q8_0",
@@ -6370,9 +6730,9 @@
     "license_url": "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
-      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:c0782bfa81a91669945c3845d46940315c85662865d372ea8bd1986c343494db"
+      "https://registry.ollama.ai:443/v2/library/mixtral/blobs/sha256:69cd486f581e20ed406b23dfa7b186fce7d59c2dde06dce62b563de38c6a9e59"
     ],
-    "sha256": "c0782bfa81a91669945c3845d46940315c85662865d372ea8bd1986c343494db"
+    "sha256": "69cd486f581e20ed406b23dfa7b186fce7d59c2dde06dce62b563de38c6a9e59"
   },
   {
     "name": "mixtral:8x7b",

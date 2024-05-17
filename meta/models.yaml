@@ -1001,3 +1001,43 @@
     - 8b-text-q5_K_S
     - 8b-text-q6_K
     - 8b-text-fp16
+
+- name: llama3-chatqa
+  chat_template: "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'System: This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{'System: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'User: ' + message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'Assistant: ' + message['content'] + '\n\n'}}{% endif %}{% endfor %}Assistant: "
+  tags:
+    - latest
+    - 70b
+    - 8b
+    - latest
+    - 70b-v1.5
+    - 70b-v1.5-q4_0
+    - 70b-v1.5-q4_1
+    - 70b-v1.5-q5_0
+    - 70b-v1.5-q5_1
+    - 70b-v1.5-q8_0
+    - 70b-v1.5-q2_K
+    - 70b-v1.5-q3_K_S
+    - 70b-v1.5-q3_K_M
+    - 70b-v1.5-q3_K_L
+    - 70b-v1.5-q4_K_S
+    - 70b-v1.5-q4_K_M
+    - 70b-v1.5-q5_K_S
+    - 70b-v1.5-q5_K_M
+    - 70b-v1.5-q6_K
+    - 70b-v1.5-fp16
+    - 8b-v1.5
+    - 8b-v1.5-q4_0
+    - 8b-v1.5-q4_1
+    - 8b-v1.5-q5_0
+    - 8b-v1.5-q5_1
+    - 8b-v1.5-q8_0
+    - 8b-v1.5-q2_K
+    - 8b-v1.5-q3_K_S
+    - 8b-v1.5-q3_K_M
+    - 8b-v1.5-q3_K_L
+    - 8b-v1.5-q4_K_S
+    - 8b-v1.5-q4_K_M
+    - 8b-v1.5-q5_K_S
+    - 8b-v1.5-q5_K_M
+    - 8b-v1.5-q6_K
+    - 8b-v1.5-fp16
