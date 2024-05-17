@@ -45,4 +45,4 @@ Example:
 | nous-hermes2-mixtral         | Yes   | No          |                                                                   |
 | codeqwen                     | Yes   | Yes         | `chat` for chat, `code` for completion, others for chat           |
 | llama3                       | Yes   | No          | Unsupported stop words, so looping will happen                    |
-
+| llama3-chatqa                | Yes   | No          | Short answers, does not use code blocks even if you ask to do so  |
