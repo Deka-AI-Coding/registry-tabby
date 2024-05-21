@@ -104,41 +104,15 @@
 
 - name: starcoder2
   prompt_template: <fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>
+  chat_template: "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ 'You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n' }}{% endif %}{% if message['role'] == 'system' %}{{ message['content'] + '\n\n'}}{% endif %}{% if message['role'] == 'user' %}{{'### Instruction\n' + message['content'] + '\n\n\n'}}{% endif %}{% if message['role'] == 'assistant' %}{{'### Response\n' + message['content'] + '\n\n\n'}}{% endif %}{% endfor %}### Response\n"
   tags: 
     - latest
-    - 3b
-    - 7b
     - 15b
-    - 3b-q4_0
-    - 3b-q4_1
-    - 3b-q5_0
-    - 3b-q5_1
-    - 3b-q8_0
-    - 3b-q2_K
-    - 3b-q3_K_S
-    - 3b-q3_K_M
-    - 3b-q3_K_L
-    - 3b-q4_K_S
-    - 3b-q4_K_M
-    - 3b-q5_K_S
-    - 3b-q5_K_M
-    - 3b-q6_K
-    - 3b-fp16
-    - 7b-q4_0
-    - 7b-q4_1
-    - 7b-q5_0
-    - 7b-q5_1
-    - 7b-q8_0
-    - 7b-q2_K
-    - 7b-q3_K_S
-    - 7b-q3_K_M
-    - 7b-q3_K_L
-    - 7b-q4_K_S
-    - 7b-q4_K_M
-    - 7b-q5_K_S
-    - 7b-q5_K_M
-    - 7b-q6_K
-    - 7b-fp16
+    - 7b
+    - 3b
+    - latest
+    - instruct
+    - 15b-instruct
     - 15b-q4_0
     - 15b-q4_1
     - 15b-q5_0
@@ -154,6 +128,53 @@
     - 15b-q5_K_M
     - 15b-q6_K
     - 15b-fp16
+    - 15b-instruct-q4_0
+    - 15b-instruct-v0.1-q4_0
+    - 15b-instruct-v0.1-q4_1
+    - 15b-instruct-v0.1-q5_0
+    - 15b-instruct-v0.1-q5_1
+    - 15b-instruct-v0.1-q8_0
+    - 15b-instruct-v0.1-q2_K
+    - 15b-instruct-v0.1-q3_K_S
+    - 15b-instruct-v0.1-q3_K_M
+    - 15b-instruct-v0.1-q3_K_L
+    - 15b-instruct-v0.1-q4_K_S
+    - 15b-instruct-v0.1-q4_K_M
+    - 15b-instruct-v0.1-q5_K_S
+    - 15b-instruct-v0.1-q5_K_M
+    - 15b-instruct-v0.1-q6_K
+    - 15b-instruct-v0.1-fp16
+    - 7b-q4_0
+    - 7b-q4_1
+    - 7b-q5_0
+    - 7b-q5_1
+    - 7b-q8_0
+    - 7b-q2_K
+    - 7b-q3_K_S
+    - 7b-q3_K_M
+    - 7b-q3_K_L
+    - 7b-q4_K_S
+    - 7b-q4_K_M
+    - 7b-q5_K_S
+    - 7b-q5_K_M
+    - 7b-q6_K
+    - 7b-fp16
+    - 3b-q4_0
+    - 3b-q4_1
+    - 3b-q5_0
+    - 3b-q5_1
+    - 3b-q8_0
+    - 3b-q2_K
+    - 3b-q3_K_S
+    - 3b-q3_K_M
+    - 3b-q3_K_L
+    - 3b-q4_K_S
+    - 3b-q4_K_M
+    - 3b-q5_K_S
+    - 3b-q5_K_M
+    - 3b-q6_K
+    - 3b-fp16
+
 
 - name: deepseek-coder
   prompt_template: "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>"
