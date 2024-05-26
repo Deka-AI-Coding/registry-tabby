@@ -2,6 +2,11 @@
 
 This repository uses ollama library to download models. You must add `TABBY_DOWNLOAD_HOST=registry.ollama.ai` in tabby's environment in order to use this registry. 
 
+## Passive maintenance notice
+From Tabby 0.12 or after [commit](https://github.com/TabbyML/tabby/commit/1d1edfec6ebc09526399abee428f9406efd31b87) it is possible to connect your Tabby instance to Ollama. Moreover, you can enable auto downloading models with `TABBY_OLLAMA_ALLOW_PULL=1` environment. Ollama will handle chat templates, stop world for you, however, you still need to set prompt template for FIM. You should consider to deploy Ollama (as a sidecar, for example) and connect Tabby to it, if you want use models from Ollama.
+
+With that being said, I moving this repository into passive maintenance. You can open issues, PRs to add new models. I will look into them but will not actively develop this repository from now on. It is possible that I will add new FIM models just to store prompt templates for them.
+
 ## Warning
 
 The model list is auto generated. Some models may not work properly.
