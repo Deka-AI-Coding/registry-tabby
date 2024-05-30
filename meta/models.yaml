@@ -423,11 +423,13 @@
 
   tags:
     - latest
-    - text
-    - v0.2
-    - v0.1
     - 7b
+    - latest
     - instruct
+    - text
+    - v0.1
+    - v0.2
+    - v0.3
     - 7b-instruct
     - 7b-text
     - 7b-instruct-q4_0
@@ -460,20 +462,35 @@
     - 7b-text-q5_K_M
     - 7b-text-q6_K
     - 7b-text-fp16
+    - 7b-instruct-v0.3-q4_0
     - 7b-instruct-v0.2-q4_0
     - 7b-instruct-v0.2-q4_1
+    - 7b-instruct-v0.3-q4_1
     - 7b-instruct-v0.2-q5_0
+    - 7b-instruct-v0.3-q5_0
     - 7b-instruct-v0.2-q5_1
+    - 7b-instruct-v0.3-q5_1
+    - 7b-instruct-v0.3-q8_0
     - 7b-instruct-v0.2-q8_0
     - 7b-instruct-v0.2-q2_K
+    - 7b-instruct-v0.3-q2_K
+    - 7b-instruct-v0.3-q3_K_S
     - 7b-instruct-v0.2-q3_K_S
+    - 7b-instruct-v0.3-q3_K_M
     - 7b-instruct-v0.2-q3_K_M
     - 7b-instruct-v0.2-q3_K_L
+    - 7b-instruct-v0.3-q3_K_L
+    - 7b-instruct-v0.3-q4_K_S
     - 7b-instruct-v0.2-q4_K_S
+    - 7b-instruct-v0.3-q4_K_M
     - 7b-instruct-v0.2-q4_K_M
     - 7b-instruct-v0.2-q5_K_S
+    - 7b-instruct-v0.3-q5_K_S
+    - 7b-instruct-v0.3-q5_K_M
     - 7b-instruct-v0.2-q5_K_M
     - 7b-instruct-v0.2-q6_K
+    - 7b-instruct-v0.3-q6_K
+    - 7b-instruct-v0.3-fp16
     - 7b-instruct-v0.2-fp16
     - 7b-text-v0.2-q4_0
     - 7b-text-v0.2-q4_1
@@ -1062,3 +1079,27 @@
     - 8b-v1.5-q5_K_M
     - 8b-v1.5-q6_K
     - 8b-v1.5-fp16
+
+- name: codestral
+  prompt_template: "[SUFFIX]{suffix}[PREFIX]{prefix}"
+  chat_template: "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
+  tags:
+    - latest
+    - 22b
+    - latest
+    - v0.1
+    - 22b-v0.1-f16
+    - 22b-v0.1-q4_0
+    - 22b-v0.1-q4_1
+    - 22b-v0.1-q5_0
+    - 22b-v0.1-q5_1
+    - 22b-v0.1-q8_0
+    - 22b-v0.1-q2_K
+    - 22b-v0.1-q3_K_S
+    - 22b-v0.1-q3_K_M
+    - 22b-v0.1-q3_K_L
+    - 22b-v0.1-q4_K_S
+    - 22b-v0.1-q4_K_M
+    - 22b-v0.1-q5_K_S
+    - 22b-v0.1-q5_K_M
+    - 22b-v0.1-q6_K

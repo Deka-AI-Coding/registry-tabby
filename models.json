@@ -3003,6 +3003,215 @@
     "sha256": "839dd3c0ce93888e8f947c8a5d992f5e1ecbce1391842270ebe710ce81b3e400"
   },
   {
+    "name": "codestral:22b",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+    ],
+    "sha256": "22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+  },
+  {
+    "name": "codestral:22b-v0.1-f16",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:c66806b6e513a5aaf19cf772b6a282fb9071d3e4189f2353732aeac1e3cf5144"
+    ],
+    "sha256": "c66806b6e513a5aaf19cf772b6a282fb9071d3e4189f2353732aeac1e3cf5144"
+  },
+  {
+    "name": "codestral:22b-v0.1-q2_K",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:a645a2a1d407b876edf4731dd223cf8a09fa168efc96b20496a89bcdf702f7b4"
+    ],
+    "sha256": "a645a2a1d407b876edf4731dd223cf8a09fa168efc96b20496a89bcdf702f7b4"
+  },
+  {
+    "name": "codestral:22b-v0.1-q3_K_L",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:e12cecf18621cf0e2893065a1dfa8d2960f061b15840d1ef81544bc375ef0eec"
+    ],
+    "sha256": "e12cecf18621cf0e2893065a1dfa8d2960f061b15840d1ef81544bc375ef0eec"
+  },
+  {
+    "name": "codestral:22b-v0.1-q3_K_M",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:dee0fb768659fdaf82fadcd1e01f21ed81010756a3c6ff9413834a78ae7ea5cd"
+    ],
+    "sha256": "dee0fb768659fdaf82fadcd1e01f21ed81010756a3c6ff9413834a78ae7ea5cd"
+  },
+  {
+    "name": "codestral:22b-v0.1-q3_K_S",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:8c1b58cf0fd2a09c86dab340dbba94a5aca46c24fffc5afa842495db9e4fb555"
+    ],
+    "sha256": "8c1b58cf0fd2a09c86dab340dbba94a5aca46c24fffc5afa842495db9e4fb555"
+  },
+  {
+    "name": "codestral:22b-v0.1-q4_0",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+    ],
+    "sha256": "22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+  },
+  {
+    "name": "codestral:22b-v0.1-q4_1",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:ba5789cba14082138bd2cabae65b6b00f9b232b55c2eba8d64eb0a0798c8b3b5"
+    ],
+    "sha256": "ba5789cba14082138bd2cabae65b6b00f9b232b55c2eba8d64eb0a0798c8b3b5"
+  },
+  {
+    "name": "codestral:22b-v0.1-q4_K_M",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:0bbfda8e64c1991072399f7e7021919463a0cb06f2cf997c940ae247084e40e8"
+    ],
+    "sha256": "0bbfda8e64c1991072399f7e7021919463a0cb06f2cf997c940ae247084e40e8"
+  },
+  {
+    "name": "codestral:22b-v0.1-q4_K_S",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:73d8b6a3770e8a15cbbeb411339a48d090aac052506ee637712c75e19d0c19f9"
+    ],
+    "sha256": "73d8b6a3770e8a15cbbeb411339a48d090aac052506ee637712c75e19d0c19f9"
+  },
+  {
+    "name": "codestral:22b-v0.1-q5_0",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:322177a337fba0b14fb09d29ed7a922671532d69408a6507b70c82ebf323ab61"
+    ],
+    "sha256": "322177a337fba0b14fb09d29ed7a922671532d69408a6507b70c82ebf323ab61"
+  },
+  {
+    "name": "codestral:22b-v0.1-q5_1",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:88ac837352b715a8d316530adcecc7590c9d5addd72413c35fa1775162b92f3c"
+    ],
+    "sha256": "88ac837352b715a8d316530adcecc7590c9d5addd72413c35fa1775162b92f3c"
+  },
+  {
+    "name": "codestral:22b-v0.1-q5_K_M",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:4f1f17fa00a1338d01a662e7b74e8abd10e39d96ae4323c7cc5ba7af2a90abf3"
+    ],
+    "sha256": "4f1f17fa00a1338d01a662e7b74e8abd10e39d96ae4323c7cc5ba7af2a90abf3"
+  },
+  {
+    "name": "codestral:22b-v0.1-q5_K_S",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:32ea3525913b548cb473a2db319c2fcdb70fe552dd1f8a52d6cb0e76be12a60d"
+    ],
+    "sha256": "32ea3525913b548cb473a2db319c2fcdb70fe552dd1f8a52d6cb0e76be12a60d"
+  },
+  {
+    "name": "codestral:22b-v0.1-q6_K",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:83d371fdab7d62c12eb780a034bf9b5ea89403e4d69e46d332d9bdaeff765c31"
+    ],
+    "sha256": "83d371fdab7d62c12eb780a034bf9b5ea89403e4d69e46d332d9bdaeff765c31"
+  },
+  {
+    "name": "codestral:22b-v0.1-q8_0",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:90038122ded15fb535d2f1aee888d33916de5d83c5f66c1b107a3c757a79c326"
+    ],
+    "sha256": "90038122ded15fb535d2f1aee888d33916de5d83c5f66c1b107a3c757a79c326"
+  },
+  {
+    "name": "codestral:latest",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+    ],
+    "sha256": "22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+  },
+  {
+    "name": "codestral:latest",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+    ],
+    "sha256": "22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+  },
+  {
+    "name": "codestral:v0.1",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+    ],
+    "sha256": "22a849aafe3ded20e9b6551b02684d8fa911537c35895dd2a1bf9eb70da8f69e"
+  },
+  {
     "name": "deepseek-coder:1.3b",
     "provider_url": "https://ollama.com/library/deepseek-coder",
     "license_url": "https://registry.ollama.ai:443/v2/library/deepseek-coder/blobs/sha256:a3a0e9449cb691a12f4de1d03725fd41326614fdeaf5d80b28c51187da0bed0e",
@@ -6155,6 +6364,156 @@
     "sha256": "2f4cf9600fb1f1223dec03a4b4286d3f6fed012c5c8e15c8c15f82a9cc10415c"
   },
   {
+    "name": "mistral:7b-instruct-v0.3-fp16",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:9cddfe94e4588250b13fc75b08b1aecabee29829d178d1a6974db558ec4f6a8c"
+    ],
+    "sha256": "9cddfe94e4588250b13fc75b08b1aecabee29829d178d1a6974db558ec4f6a8c"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q2_K",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:4f9dcf17dbd0097adcb0aac9157ef9ec7ed716713cfcc3d165cd3e4c1ce98f72"
+    ],
+    "sha256": "4f9dcf17dbd0097adcb0aac9157ef9ec7ed716713cfcc3d165cd3e4c1ce98f72"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q3_K_L",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:eef5b3aea14da7e8e049aff0d4943b63c254ca12bcff2584ada25833f54ec804"
+    ],
+    "sha256": "eef5b3aea14da7e8e049aff0d4943b63c254ca12bcff2584ada25833f54ec804"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q3_K_M",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:19eac7b807c3c35c64714833b800f10dd311e039ca100802d21b069c60776813"
+    ],
+    "sha256": "19eac7b807c3c35c64714833b800f10dd311e039ca100802d21b069c60776813"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q3_K_S",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:64d246b2b845d60b175d403946c0a5d7e8af0c3713ca81cfcb3270c23e3d42fd"
+    ],
+    "sha256": "64d246b2b845d60b175d403946c0a5d7e8af0c3713ca81cfcb3270c23e3d42fd"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q4_0",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:ff82381e2bea77d91c1b824c7afb83f6fb73e9f7de9dda631bcdbca564aa5435"
+    ],
+    "sha256": "ff82381e2bea77d91c1b824c7afb83f6fb73e9f7de9dda631bcdbca564aa5435"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q4_1",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:03e9cc730b3e3c6275f03c5c7b16907367080db0111448a1162c680a10564c39"
+    ],
+    "sha256": "03e9cc730b3e3c6275f03c5c7b16907367080db0111448a1162c680a10564c39"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q4_K_M",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f"
+    ],
+    "sha256": "f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q4_K_S",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:437a58eed892f130783c24558417ec363dfd442faa96c2caaf21dd64abaa9cfe"
+    ],
+    "sha256": "437a58eed892f130783c24558417ec363dfd442faa96c2caaf21dd64abaa9cfe"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q5_0",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:08a1a29bc784f19dd35d33a0a5bd1bf8218c98c2a8b61ff131e527eeea3b5c15"
+    ],
+    "sha256": "08a1a29bc784f19dd35d33a0a5bd1bf8218c98c2a8b61ff131e527eeea3b5c15"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q5_1",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:a26c4ca2fa42b6b7ccea186f3a954e2f68b5ec55f7aea308293ebae1655818cd"
+    ],
+    "sha256": "a26c4ca2fa42b6b7ccea186f3a954e2f68b5ec55f7aea308293ebae1655818cd"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q5_K_M",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:aaf7a285880e93f4628e290d46fda4651330289c83438dd6a5b35eb1c9641071"
+    ],
+    "sha256": "aaf7a285880e93f4628e290d46fda4651330289c83438dd6a5b35eb1c9641071"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q5_K_S",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:6c979bfa158202c4fc54a46781ccafaeb35776badf7e7ddd7b9f1a44a93ac0d5"
+    ],
+    "sha256": "6c979bfa158202c4fc54a46781ccafaeb35776badf7e7ddd7b9f1a44a93ac0d5"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q6_K",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:b33d2cd0c316ef8f0bade3ffdc0253b83050e16e724ef43875f8140599ef6a20"
+    ],
+    "sha256": "b33d2cd0c316ef8f0bade3ffdc0253b83050e16e724ef43875f8140599ef6a20"
+  },
+  {
+    "name": "mistral:7b-instruct-v0.3-q8_0",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:6e3f7757a149db5a1acc9d1e8efa55ca5ccb6e0bf402f312369a4eca0ad390a0"
+    ],
+    "sha256": "6e3f7757a149db5a1acc9d1e8efa55ca5ccb6e0bf402f312369a4eca0ad390a0"
+  },
+  {
     "name": "mistral:7b-text",
     "provider_url": "https://ollama.com/library/mistral",
     "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
@@ -6485,6 +6844,16 @@
     "sha256": "ff82381e2bea77d91c1b824c7afb83f6fb73e9f7de9dda631bcdbca564aa5435"
   },
   {
+    "name": "mistral:latest",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:ff82381e2bea77d91c1b824c7afb83f6fb73e9f7de9dda631bcdbca564aa5435"
+    ],
+    "sha256": "ff82381e2bea77d91c1b824c7afb83f6fb73e9f7de9dda631bcdbca564aa5435"
+  },
+  {
     "name": "mistral:text",
     "provider_url": "https://ollama.com/library/mistral",
     "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
@@ -6513,6 +6882,16 @@
       "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:e8a35b5937a5e6d5c35d1f2a15f161e07eefe5e5bb0a3cdd42998ee79b057730"
     ],
     "sha256": "e8a35b5937a5e6d5c35d1f2a15f161e07eefe5e5bb0a3cdd42998ee79b057730"
+  },
+  {
+    "name": "mistral:v0.3",
+    "provider_url": "https://ollama.com/library/mistral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://registry.ollama.ai:443/v2/library/mistral/blobs/sha256:ff82381e2bea77d91c1b824c7afb83f6fb73e9f7de9dda631bcdbca564aa5435"
+    ],
+    "sha256": "ff82381e2bea77d91c1b824c7afb83f6fb73e9f7de9dda631bcdbca564aa5435"
   },
   {
     "name": "mixtral:8x22b",
