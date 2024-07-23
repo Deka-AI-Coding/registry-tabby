@@ -1103,3 +1103,59 @@
     - 22b-v0.1-q5_K_S
     - 22b-v0.1-q5_K_M
     - 22b-v0.1-q6_K
+
+- name: deepseek-coder-v2
+  prompt_template: "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>"
+  chat_template: "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ 'User: ' + message['content'] + '\nAssistant: ' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}"
+  tags:
+    - latest
+    - 236b
+    - 16b
+    - lite
+    - 236b-instruct-q4_k_m
+    - 236b-instruct-fp16
+    - 236b-instruct-q2_K
+    - 236b-instruct-q3_K_L
+    - 236b-instruct-q3_K_M
+    - 236b-instruct-q3_K_S
+    - 236b-instruct-q4_0
+    - 236b-instruct-q4_1
+    - 236b-instruct-q4_K_M
+    - 236b-instruct-q4_K_S
+    - 236b-instruct-q5_0
+    - 236b-instruct-q5_1
+    - 236b-instruct-q5_K_M
+    - 236b-instruct-q5_K_S
+    - 236b-instruct-q6_K
+    - 236b-instruct-q8_0
+    - 16b-lite-base-fp16
+    - 16b-lite-base-q2_K
+    - 16b-lite-base-q3_K_L
+    - 16b-lite-base-q3_K_M
+    - 16b-lite-base-q3_K_S
+    - 16b-lite-base-q4_0
+    - 16b-lite-base-q4_1
+    - 16b-lite-base-q4_K_M
+    - 16b-lite-base-q4_K_S
+    - 16b-lite-base-q5_0
+    - 16b-lite-base-q5_1
+    - 16b-lite-base-q5_K_M
+    - 16b-lite-base-q5_K_S
+    - 16b-lite-base-q6_K
+    - 16b-lite-base-q8_0
+    - 16b-lite-instruct-fp16
+    - 16b-lite-instruct-q2_K
+    - 16b-lite-instruct-q3_K_L
+    - 16b-lite-instruct-q3_K_M
+    - 16b-lite-instruct-q3_K_S
+    - 16b-lite-instruct-q4_0
+    - 16b-lite-instruct-q4_1
+    - 16b-lite-instruct-q4_K_M
+    - 16b-lite-instruct-q4_K_S
+    - 16b-lite-instruct-q5_0
+    - 16b-lite-instruct-q5_1
+    - 16b-lite-instruct-q5_K_M
+    - 16b-lite-instruct-q5_K_S
+    - 16b-lite-instruct-q6_K
+    - 16b-lite-instruct-q8_0
+
