@@ -52,4 +52,4 @@ Example:
 | llama3                       | Yes   | No          | Unsupported stop words, so looping will happen                    |
 | llama3-chatqa                | Yes   | No          | Short answers, does not use code blocks even if you ask to do so  |
 | codestral                    | Yes   | Yes         |                                                                   |
-| deepseek-coder-v2            | Yes   | Yes         | `base` for completion, `chat` for chat                            |
+| deepseek-coder-v2            | Yes   | Yes         | `base` for completion, `instruct` for chat                            |
